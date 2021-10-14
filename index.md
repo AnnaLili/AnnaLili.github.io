@@ -74,3 +74,29 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 <p>专业增强版：</p>
 <a href="https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/zh-CN/O365ProPlusRetail.img">O365ProPlusRetail.img</a>
+
+<h1>Windows 7下载</h1>
+ 
+<p>专业版32位带更新包：</p>
+<a href="ed2k://|file|cn_windows_7_professional_with_sp1_vl_build_x86_dvd_u_677939.iso|2502909952|935E5B4B754527BE3C238FA6ABDD9B86|/">cn_windows_7_professional_with_sp1_vl_build_x86_dvd_u_677939.iso</a>
+<p>专业版64位带更新包：</p>
+<a href="ed2k://|file|cn_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677816.iso|3266004992|5A52F4CCEFA71797D58389B397038B2F|/">cn_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677816.iso</a>
+
+<h1>Windows 8.1下载</h1>
+
+<p>专业版32位：</p>
+<a href="ed2k://|file|cn_windows_8.1_professional_vl_with_update_x86_dvd_4048630.iso|3086659584|41CAAB5DAC5643F6E0048576D609C19A|/">cn_windows_8.1_professional_vl_with_update_x86_dvd_4048630.iso</a>
+<p>专业版64位：</p>
+<a href="ed2k://|file|cn_windows_8.1_professional_vl_with_update_x64_dvd_4050293.iso|4136626176|4D2363F9E06BFD50A78B1E6464702959|/">cn_windows_8.1_professional_vl_with_update_x64_dvd_4050293.iso</a>
+
+<h1>Windows 10下载</h1>
+
+<p>商业版32位：</p>
+<a href="ed2k://|file|zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x86_dvd_3a0314c9.iso|4140279808|01B1F60FBCCC8BA61F0208D0F4957949|/">zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x86_dvd_3a0314c9.iso</a>
+<p>商业版64位：</p>
+<a href="ed2k://|file|zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x64_dvd_023d42d3.iso|5709488128|B09B1BA01F76C80E2BD8E798C9E89E7D|/">zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x64_dvd_023d42d3.iso</a>
+
+<h1>Windows 11下载</h1>
+
+<p>商业版64位：</p>
+<a href="ed2k://|file|zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso|5413181440|88CA1AE28F5F8A238647561B5C00E511|/">zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso</a>
