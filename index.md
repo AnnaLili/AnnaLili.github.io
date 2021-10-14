@@ -101,1193 +101,1264 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-<!Doctype html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta property="qc:admins" content="465267610762567726375" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Python GUI 编程(Tkinter) | 菜鸟教程</title>
 
-  <meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="canonical" href="http://www.runoob.com/python/python-gui-tkinter.html" />
-<meta name="keywords" content="Python GUI 编程(Tkinter)">
-<meta name="description" content="Python GUI编程(Tkinter) Python 提供了多个图形开发界面的库，几个常用 Python GUI 库如下：   Tkinter： Tkinter 模块(Tk 接口)是 Python 的标准 Tk GUI 工具包的接口 .Tk 和 Tkinter 可以在大多数的 Unix 平台下使用,同样可以应用在 Windows 和 Macintosh 系统里。Tk8.0 的后续版本可以实现本地窗口风格,并良好地运行在绝大多数平台中..">
-		
-	<link rel="shortcut icon" href="https://static.runoob.com/images/favicon.ico" mce_href="//static.runoob.com/images/favicon.ico" type="image/x-icon" >
-	<link rel="stylesheet" href="/wp-content/themes/runoob/style.css?v=1.165" type="text/css" media="all" />	
-	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />	
-  <!--[if gte IE 9]><!-->
-  <script src="https://cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
-  <!--<![endif]-->
-  <!--[if lt IE 9]>
-     <script src="https://cdn.staticfile.org/jquery/1.9.1/jquery.min.js"></script>
-     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-  <![endif]-->
-  <link rel="apple-touch-icon" href="https://static.runoob.com/images/icon/mobile-icon.png"/>
-  <meta name="apple-mobile-web-app-title" content="菜鸟教程">
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-language" content="zh-cn" />
+        <meta name="ms.lang" content="zh">
+        <meta name="ms.loc" content="cn">
+            <title>探索 Windows 11 操作系统、电脑、应用程序等 | Microsoft</title>
+            <meta name="Title" content="探索 Windows 11 操作系统、电脑、应用程序等 | Microsoft" />
+            <meta name="Description" content="探索 Microsoft 全新的 Windows 11 操作系统，新版 Windows 具有 Windows 10 的全部功能和安全性，同时具有经重新设计而焕然一新的外观。" />
+            <meta name="keywords" content="Windows 11、Windows 操作系统、Windows、Windows、Windows 笔记本电脑" />
+            <meta name="twitter:title" content="探索 Windows 11 操作系统、电脑、应用程序等 | Microsoft" />
+            <meta name="twitter:description" content="探索 Microsoft 全新的 Windows 11 操作系统，新版 Windows 具有 Windows 10 的全部功能和安全性，同时具有经重新设计而焕然一新的外观。" />
+            <meta property="og:title" content="探索 Windows 11 操作系统、电脑、应用程序等 | Microsoft" />
+            <meta property="og:description" content="探索 Microsoft 全新的 Windows 11 操作系统，新版 Windows 具有 Windows 10 的全部功能和安全性，同时具有经重新设计而焕然一新的外观。" />
+        <meta property="og:locale" content="zh-cn">
+        <meta name="twitter:creator" content="@microsoft">
+        <meta name="twitter:site" content="@windows" />
+        <meta name="fb:app_id" content="30968512668" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.microsoft.com/zh-cn/windows" />
+            <meta name="twitter:image" content="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAk" />
+            <meta property="og:image" content="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAk" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.microsoft.com/zh-cn/windows" />
+        <meta property="og:site_name" content="Windows" />
+            <link rel="canonical" href="https://www.microsoft.com/zh-cn/windows" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="author" content="Microsoft" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        <meta http-equiv="cleartype" content="on">
+        <meta name="country" content="cn" />
+    <script type='text/javascript'>
+        window.mldcc = "MSCC:"+"NR";
+    </script>
+    
+    <script src="/en-us/windows/remote-resource-center/articles/scripts/Jquery.js?v=vvmWf9kiccVb69JKIqNan7auIuvzjAK8AywO-8VLfyY1"></script>
+
+
+    <script src="https://www.microsoft.com/videoplayer/js/oneplayeriframe.js"></script>
+    <link href="/en-us/windows/remote-resource-center/articles/Content/Globalstyles.css?v=QSCssC-KgMWxXguulno330Y-PbM3qfvsFpsHrzywnxM1" rel="stylesheet"/>
+
+    <link rel="SHORTCUT ICON" href="https://c.s-microsoft.com/favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" type="text/css" href="//mwf-service.akamaized.net/mwf/css/bundle/1.56.0/chinese-simplified/default/mwf-main.min.css">
+
+<link rel="stylesheet" href="https://www.microsoft.com/onerfstatics/marketingsites-eas-prod/chinese-simplified/shell/_scrf/css/themes=default.device=uplevel_web_pc/79-4cdd0a/33-ae3d41/a5-4bf7a2/13-8e1ceb/81-32f0c0/5c-b7b685/ac-4ce89a/ef-a24652?ver=2.0&amp;_cf=20210618" type="text/css" media="all" /><link rel='stylesheet' href='https://statics-marketingsites-eas-ms-com.akamaized.net/statics/override.css' type='text/css' />    <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+    <script src="//assets.adobedtm.com/launch-ENbb9d0de7cc374dc99259df2c4b823cef.min.js" async></script>
+    <script src="https://covidhubazure.blob.core.windows.net/covidhubpublic/windows-adobe-audience-manager-3_1_2.js?sp=r&st=2021-02-25T06:32:36Z&se=2025-12-31T14:32:36Z&spr=https&sv=2020-02-10&sr=b&sig=hT0p9IEztttJ2F6JY495X%2BztYbu%2FYRBwpBJcEd4aktg%3D"></script>
+    
 </head>
 <body>
+    <div id="cookie-banner"></div>
+    <div id="headerArea" class="uhf"  data-m='{"cN":"headerArea","cT":"Area_coreuiArea","id":"a1Body","sN":1,"aN":"Body"}'>
+                <div id="headerRegion"     data-region-key="headerregion" data-m='{"cN":"headerRegion","cT":"Region_coreui-region","id":"r1a1","sN":1,"aN":"a1"}' >
 
-<!--  头部 -->
-<div class="container logo-search">
-
-  <div class="col search row-search-mobile">
-    <form action="index.php">
-      <input class="placeholder" placeholder="搜索……" name="s" autocomplete="off">
-      
-    </form>
-  </div>
-
-  <div class="row">
-    <div class="col logo">
-      <h1><a href="/">菜鸟教程 -- 学的不仅是技术，更是梦想！</a></h1>
-    </div>
-        <div class="col right-list"> 
-    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull" style=""> <i class="fa fa-navicon"></i> </button>
-    </div>
+    <div  id="headerUniversalHeader" data-m='{"cN":"headerUniversalHeader","cT":"Module_coreui-universalheader","id":"m1r1a1","sN":1,"aN":"r1a1"}'  data-module-id="Category|headerRegion|coreui-region|headerUniversalHeader|coreui-universalheader">
         
-    <div class="col search search-desktop last">
-      <div class="search-input" >
-      <form action="//www.runoob.com/" target="_blank">
-        <input class="placeholder" id="s" name="s" placeholder="搜索……"  autocomplete="off" style="height: 44px;">
-      </form>
-      
-      </div>
+
+                        <div id="epb" class="x-hidden x-hidden-vp-mobile-st uhfc-universal-context context-uhf" data-m='{"cN":"epb_cont","cT":"Container","id":"c1m1r1a1","sN":1,"aN":"m1r1a1"}'>
+
+	<div class="c-uhfh-alert f-information epb-container theme-light" role="dialog" aria-label="促销性横幅" data-m='{"cT":"Container","id":"c1c1m1r1a1","sN":1,"aN":"c1m1r1a1"}' data-pb="[{&quot;Browser&quot;:&quot;anaheim&quot;,&quot;ExtensionType&quot;:&quot;windows10only&quot;,&quot;ExtensionUrl&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=2128969&amp;pc=W037&quot;,&quot;BackgroundColorDarkTheme&quot;:&quot;b-black&quot;,&quot;LogoUrlDarkTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xvsU?ver=e636&quot;,&quot;ActionLinkBackgroundColorDarkTheme&quot;:&quot;btn-white&quot;,&quot;BackgroundColorLightTheme&quot;:&quot;b-white&quot;,&quot;LogoUrlLightTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xvsU?ver=e636&quot;,&quot;ActionLinkBackgroundColorLightTheme&quot;:&quot;btn-light-blue&quot;,&quot;Title&quot;:&quot;从桌面上一张张的照片探索世界立刻下载必应壁纸 APP&quot;,&quot;Paragraph&quot;:&quot;下载必应壁纸 APP ，每天为您换美桌面&quot;,&quot;ActionLinkText&quot;:&quot;立刻下载&quot;,&quot;ActionLinkAriaLabel&quot;:&quot;立刻下载&quot;,&quot;DismissText&quot;:&quot;不，谢谢&quot;,&quot;DismissAriaLabel&quot;:&quot;不，谢谢&quot;,&quot;CookieExpiration&quot;:&quot;30&quot;,&quot;CurrentTheme&quot;:&quot;theme-light&quot;},{&quot;Browser&quot;:&quot;firefox&quot;,&quot;ExtensionType&quot;:&quot;msn&quot;,&quot;ExtensionUrl&quot;:&quot;https://browserdefaults.microsoft.com/BNP/redirect?br=mf&amp;xid=2&amp;channel=uhf&quot;,&quot;BackgroundColorDarkTheme&quot;:&quot;b-blue&quot;,&quot;LogoUrlDarkTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3zanz?ver=4e18&quot;,&quot;ActionLinkBackgroundColorDarkTheme&quot;:&quot;btn-white&quot;,&quot;BackgroundColorLightTheme&quot;:&quot;b-white&quot;,&quot;LogoUrlLightTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3zcX5?ver=0d48&quot;,&quot;ActionLinkBackgroundColorLightTheme&quot;:&quot;btn-blue&quot;,&quot;Title&quot;:&quot;随时了解全球重大新闻&quot;,&quot;Paragraph&quot;:&quot;获取 Bing + MSN 扩展&quot;,&quot;ActionLinkText&quot;:&quot;立即添加&quot;,&quot;ActionLinkAriaLabel&quot;:&quot;立即添加&quot;,&quot;DismissText&quot;:&quot;不，谢谢&quot;,&quot;DismissAriaLabel&quot;:&quot;不，谢谢&quot;,&quot;CookieExpiration&quot;:&quot;30&quot;,&quot;CurrentTheme&quot;:&quot;theme-light&quot;}]" data-pb-g="true">
+		<div>
+			<div class="c-paragraph">
+				<img alt="" data-src="" src="" class="f-img-lzy" />
+				<span class="c-text-group pb-content">
+					<span class="epb-launch pb-content-heading"></span>
+					<span class="epb-text pb-content-text"></span>
+				</span>
+			</div>
+			<span class="c-group">
+				<button id="close-epb" class="c-action-trigger c-action-cancel glyph-cancel" data-m='{"cN":"PB-dismiss_nonnav","id":"nn1c1c1m1r1a1","sN":1,"aN":"c1c1m1r1a1"}'></button>
+				<a id="epbTryNow" href="" target="_blank" class="epb-launch c-action-trigger c-action-open" data-m='{"cN":"PB-launch_nav","id":"n2c1c1m1r1a1","sN":2,"aN":"c1c1m1r1a1"}'></a>
+			</span>
+		</div>
+	</div>
+
+
+
+
+
+                            
+                        </div>
+
+
+
+
+        <a id="uhfSkipToMain" class="m-skip-to-main" href="javascript:void(0)" data-href="#primaryArea" tabindex="0" data-m='{"cN":"Skip to content_nonnav","id":"nn2c1m1r1a1","sN":2,"aN":"c1m1r1a1"}'>跳转至主内容</a>
+
+
+<header class="c-uhfh context-uhf no-js c-sgl-stck c-category-header " itemscope="itemscope" data-header-footprint="/Windows/windows-header-holiday-RT, fromService: True"   data-magict="true"  itemtype="http://schema.org/Organization">
+    <div class="theme-light js-global-head f-closed  global-head-cont" data-m='{"cN":"Universal Header_cont","cT":"Container","id":"c3c1m1r1a1","sN":3,"aN":"c1m1r1a1"}'>
+        <div class="c-uhfh-gcontainer-st">
+            <button type="button" class="c-action-trigger c-glyph glyph-global-nav-button" aria-label="所有 Microsoft 项目都会扩展以显示 Microsoft 产品和服务的列表" initialState-label="所有 Microsoft 项目都会扩展以显示 Microsoft 产品和服务的列表" toggleState-label="Close All Microsoft list" aria-expanded="false" data-m='{"cN":"Mobile menu button_nonnav","id":"nn1c3c1m1r1a1","sN":1,"aN":"c3c1m1r1a1"}'></button>
+            <button type="button" class="c-action-trigger c-glyph glyph-arrow-htmllegacy c-close-search" aria-label="关闭搜索" aria-expanded="false" data-m='{"cN":"Close Search_nonnav","id":"nn2c3c1m1r1a1","sN":2,"aN":"c3c1m1r1a1"}'></button>
+                    <a id="uhfLogo" class="c-logo c-sgl-stk-uhfLogo" itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft" data-m='{"cN":"GlobalNav_Logo_cont","cT":"Container","id":"c3c3c1m1r1a1","sN":3,"aN":"c3c1m1r1a1"}'>
+                        <img alt="" itemprop="logo" class="c-image" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" role="presentation" aria-hidden="true" />
+                        <span itemprop="name" role="presentation" aria-hidden="true">Microsoft</span>
+                    </a>
+            <div class="f-mobile-title">
+                <button type="button" class="c-action-trigger c-glyph glyph-chevron-left" aria-label="查看更多菜单选项" data-m='{"cN":"Mobile back button_nonnav","id":"nn4c3c1m1r1a1","sN":4,"aN":"c3c1m1r1a1"}'></button>
+                <span data-global-title="Microsoft 主页" class="js-mobile-title">Windows</span>
+                <button type="button" class="c-action-trigger c-glyph glyph-chevron-right" aria-label="查看更多菜单选项" data-m='{"cN":"Mobile forward button_nonnav","id":"nn5c3c1m1r1a1","sN":5,"aN":"c3c1m1r1a1"}'></button>
+            </div>
+                    <div class="c-show-pipe x-hidden-vp-mobile-st">
+                        <a id="uhfCatLogo" class="c-logo c-cat-logo" href="https://www.microsoft.com/zh-cn/windows" aria-label="Windows" itemprop="url" data-m='{"cN":"CatNav_Windows_nav","id":"n6c3c1m1r1a1","sN":6,"aN":"c3c1m1r1a1"}'>
+                                <span>Windows</span>
+                        </a>
+                    </div>
+                <div class="cat-logo-button-cont x-hidden">
+                        <button type="button" id="uhfCatLogoButton" class="c-cat-logo-button x-hidden" aria-expanded="false" aria-label="Windows" data-m='{"cN":"Windows_nonnav","id":"nn7c3c1m1r1a1","sN":7,"aN":"c3c1m1r1a1"}'>
+                            Windows
+                        </button>
+                </div>
+
+
+
+                    <nav id="uhf-g-nav" aria-label="上下文菜单" class="c-uhfh-gnav" data-m='{"cN":"Category nav_cont","cT":"Container","id":"c8c3c1m1r1a1","sN":8,"aN":"c3c1m1r1a1"}'>
+            <ul class="js-paddle-items">
+                    <li class="single-link js-nav-menu x-hidden-none-mobile-vp uhf-menu-item">
+                        <a class="c-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows" data-m='{"cN":"CatNav_主页_nav","id":"n1c8c3c1m1r1a1","sN":1,"aN":"c8c3c1m1r1a1"}' > 主页 </a>
+                    </li>
+                                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="c-shellmenu_40"  aria-expanded="false" data-m='{"cN":"CatNav_WindowsOS_nonnav","id":"nn2c8c3c1m1r1a1","sN":2,"aN":"c8c3c1m1r1a1"}'>Windows OS </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"WindowsOS_cont","cT":"Container","id":"c3c8c3c1m1r1a1","sN":3,"aN":"c8c3c1m1r1a1"}'>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cN":"Windows11_cont","cT":"Container","id":"c1c3c8c3c1m1r1a1","sN":1,"aN":"c3c8c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-c-shellmenu_41-span" style="display:none"   aria-expanded="false" data-m='{"cN":"CatNav_Windows11_nonnav","id":"nn1c1c3c8c3c1m1r1a1","sN":1,"aN":"c1c3c8c3c1m1r1a1"}'>全新 Windows 11</span>
+    <button id="uhf-navbtn-c-shellmenu_41-button" type="button"   aria-expanded="false" data-m='{"cN":"CatNav_Windows11_nonnav","id":"nn2c1c3c8c3c1m1r1a1","sN":2,"aN":"c1c3c8c3c1m1r1a1"}'>全新 Windows 11</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows11_cont","cT":"Container","id":"c3c1c3c8c3c1m1r1a1","sN":3,"aN":"c1c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_42" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/windows-11" data-m='{"cN":"CatNav_Windows11_nav","id":"n1c3c1c3c8c3c1m1r1a1","sN":1,"aN":"c3c1c3c8c3c1m1r1a1"}'>了解 Windows 11</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"GetWindows11_cont","cT":"Container","id":"c4c1c3c8c3c1m1r1a1","sN":4,"aN":"c1c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_43" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/get-windows-11" data-m='{"cN":"CatNav_GetWindows11_nav","id":"n1c4c1c3c8c3c1m1r1a1","sN":1,"aN":"c4c1c3c8c3c1m1r1a1"}'>如何获取 Windows 11</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows11Security_cont","cT":"Container","id":"c5c1c3c8c3c1m1r1a1","sN":5,"aN":"c1c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_44" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/comprehensive-security" data-m='{"cN":"CatNav_Windows11Security_nav","id":"n1c5c1c3c8c3c1m1r1a1","sN":1,"aN":"c5c1c3c8c3c1m1r1a1"}'>Windows 11 安全性</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"CompareWindows11_cont","cT":"Container","id":"c6c1c3c8c3c1m1r1a1","sN":6,"aN":"c1c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_45" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/compare-windows-11-home-vs-pro-versions" data-m='{"cN":"CatNav_CompareWindows11_nav","id":"n1c6c1c3c8c3c1m1r1a1","sN":1,"aN":"c6c1c3c8c3c1m1r1a1"}'>比较 Windows 11 版本</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows11Specs_cont","cT":"Container","id":"c7c1c3c8c3c1m1r1a1","sN":7,"aN":"c1c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_46" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/windows-11-specifications" data-m='{"cN":"CatNav_Windows11Specs_nav","id":"n1c7c1c3c8c3c1m1r1a1","sN":1,"aN":"c7c1c3c8c3c1m1r1a1"}'>Windows 11 的规格和要求</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cN":"Windows10_cont","cT":"Container","id":"c2c3c8c3c1m1r1a1","sN":2,"aN":"c3c8c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-c-shellmenu_47-span" style="display:none"   aria-expanded="false" data-m='{"cN":"CatNav_Windows10_nonnav","id":"nn1c2c3c8c3c1m1r1a1","sN":1,"aN":"c2c3c8c3c1m1r1a1"}'>Windows 10</span>
+    <button id="uhf-navbtn-c-shellmenu_47-button" type="button"   aria-expanded="false" data-m='{"cN":"CatNav_Windows10_nonnav","id":"nn2c2c3c8c3c1m1r1a1","sN":2,"aN":"c2c3c8c3c1m1r1a1"}'>Windows 10</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"BuyWindows10Home_cont","cT":"Container","id":"c3c2c3c8c3c1m1r1a1","sN":3,"aN":"c2c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_48" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4" data-m='{"cN":"CatNav_BuyWindows10Home_nav","id":"n1c3c2c3c8c3c1m1r1a1","sN":1,"aN":"c3c2c3c8c3c1m1r1a1"}'>购买 Windows 10 家庭版</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"BuyWidows10Pro_cont","cT":"Container","id":"c4c2c3c8c3c1m1r1a1","sN":4,"aN":"c2c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_49" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/p/windows-10-pro/df77x4d43rkt" data-m='{"cN":"CatNav_BuyWidows10Pro_nav","id":"n1c4c2c3c8c3c1m1r1a1","sN":1,"aN":"c4c2c3c8c3c1m1r1a1"}'>购买 Windows 10 专业版</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows10Specs_cont","cT":"Container","id":"c5c2c3c8c3c1m1r1a1","sN":5,"aN":"c2c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_50" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/windows-10-specifications" data-m='{"cN":"CatNav_Windows10Specs_nav","id":"n1c5c2c3c8c3c1m1r1a1","sN":1,"aN":"c5c2c3c8c3c1m1r1a1"}'>Windows 10 的规格和要求</a>
+            
+        </li>
+    </ul>
+    
+</li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Win7EOS_cont","cT":"Container","id":"c3c3c8c3c1m1r1a1","sN":3,"aN":"c3c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_51" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/windows-7-end-of-life-support-information" data-m='{"cN":"CatNav_Win7EOS_nav","id":"n1c3c3c8c3c1m1r1a1","sN":1,"aN":"c3c3c8c3c1m1r1a1"}'>Windows 7 停止支持</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="c-shellmenu_52"  aria-expanded="false" data-m='{"cN":"CatNav_Computers_nonnav","id":"nn4c8c3c1m1r1a1","sN":4,"aN":"c8c3c1m1r1a1"}'>计算机 </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"Computers_cont","cT":"Container","id":"c5c8c3c1m1r1a1","sN":5,"aN":"c8c3c1m1r1a1"}'>
+        <li class="js-nav-menu single-link" data-m='{"cN":"ComputersOverview_cont","cT":"Container","id":"c1c5c8c3c1m1r1a1","sN":1,"aN":"c5c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_53" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/computers" data-m='{"cN":"CatNav_ComputersOverview_nav","id":"n1c1c5c8c3c1m1r1a1","sN":1,"aN":"c1c5c8c3c1m1r1a1"}'>新的 Windows 计算机上有什么</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="c-shellmenu_54"  aria-expanded="false" data-m='{"cN":"CatNav_ExploreWindows_nonnav","id":"nn6c8c3c1m1r1a1","sN":6,"aN":"c8c3c1m1r1a1"}'>探索 WINDOWS </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"ExploreWindows_cont","cT":"Container","id":"c7c8c3c1m1r1a1","sN":7,"aN":"c8c3c1m1r1a1"}'>
+        <li class="js-nav-menu single-link" data-m='{"cN":"TipsAndTricks_cont","cT":"Container","id":"c1c7c8c3c1m1r1a1","sN":1,"aN":"c7c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_55" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/features" data-m='{"cN":"CatNav_TipsAndTricks_nav","id":"n1c1c7c8c3c1m1r1a1","sN":1,"aN":"c1c7c8c3c1m1r1a1"}'>提示与技巧</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows11Apps_cont","cT":"Container","id":"c2c7c8c3c1m1r1a1","sN":2,"aN":"c7c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_56" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/windows-11-apps" data-m='{"cN":"CatNav_Windows11Apps_nav","id":"n1c2c7c8c3c1m1r1a1","sN":1,"aN":"c2c7c8c3c1m1r1a1"}'>应用</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"PCGaming_cont","cT":"Container","id":"c3c7c8c3c1m1r1a1","sN":3,"aN":"c7c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_57" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/windows-11-pc-gaming" data-m='{"cN":"CatNav_PCGaming_nav","id":"n1c3c7c8c3c1m1r1a1","sN":1,"aN":"c3c7c8c3c1m1r1a1"}'>游戏</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="c-shellmenu_58"  aria-expanded="false" data-m='{"cN":"CatNav_Support_nonnav","id":"nn8c8c3c1m1r1a1","sN":8,"aN":"c8c3c1m1r1a1"}'>支持 </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"Support_cont","cT":"Container","id":"c9c8c3c1m1r1a1","sN":9,"aN":"c8c3c1m1r1a1"}'>
+        <li class="js-nav-menu single-link" data-m='{"cN":"HowTo_cont","cT":"Container","id":"c1c9c8c3c1m1r1a1","sN":1,"aN":"c9c8c3c1m1r1a1"}'>
+            <a id="c-shellmenu_59" class="js-subm-uhf-nav-link" href="https://support.microsoft.com/windows" data-m='{"cN":"CatNav_HowTo_nav","id":"n1c1c9c8c3c1m1r1a1","sN":1,"aN":"c1c9c8c3c1m1r1a1"}'>Windows 帮助和学习</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="c-shellmenu_60" class="c-uhf-nav-link" href="https://www.microsoft.com/ZH-CN/windowsforbusiness" data-m='{"cN":"CatNav_windowsforbusiness_nav","id":"n10c8c3c1m1r1a1","sN":10,"aN":"c8c3c1m1r1a1"}'>商业用途</a>
+                        </li>
+
+
+                <li id="overflow-menu" class="overflow-menu x-hidden uhf-menu-item">
+                        <div class="c-uhf-menu js-nav-menu">
+        <button data-m='{"pid":"更多","id":"nn11c8c3c1m1r1a1","sN":11,"aN":"c8c3c1m1r1a1"}' type="button" aria-label="更多" aria-expanded="false">更多</button>
+        <ul id="overflow-menu-list" aria-hidden="true" class="overflow-menu-list">
+        </ul>
     </div>
-  </div>
-</div>
+
+                </li>
+                            </ul>
+            
+        </nav>
 
 
-<!-- 导航栏 -->
-<!-- 导航栏 -->
-<div class="container navigation">
-	<div class="row">
-		<div class="col nav">
-			<ul class="pc-nav" id="runoob-detail-nav">
-				<li><a href="//www.runoob.com/">首页</a></li>
-				<li><a href="/html/html-tutorial.html">HTML</a></li>
-				<li><a href="/css/css-tutorial.html">CSS</a></li>
-				<li><a href="/js/js-tutorial.html">JavaScript</a></li>
-				
-				<li><a href="javascript:void(0);" data-id="vue">Vue</a></li>
-				<li><a href="javascript:void(0);" data-id="bootstrap">Bootstrap</a></li>
-				<li><a href="/nodejs/nodejs-tutorial.html">NodeJS</a></li>
-				<li><a href="/jquery/jquery-tutorial.html">jQuery</a></li>
-				<li><a href="javascript:void(0);" data-id="python">Python</a></li>
-				<li><a href="/java/java-tutorial.html">Java</a></li>
-				<li><a href="/cprogramming/c-tutorial.html">C</a></li>
-				<li><a href="/cplusplus/cpp-tutorial.html">C++</a></li>
-				<li><a href="/csharp/csharp-tutorial.html">C#</a></li>
-				<li><a href="/go/go-tutorial.html">Go</a></li>
-				<li><a href="/sql/sql-tutorial.html">SQL</a></li>
-				<li><a href="/linux/linux-tutorial.html">Linux</a></li>
-				<li><a href="/browser-history">本地书签</a></li>
-				<!--
-			
-				<li><a href="/w3cnote/knowledge-start.html" style="font-weight: bold;" onclick="_hmt.push(['_trackEvent', '星球', 'click', 'start'])" title="我的圈子">我的圈子</a></li>				
-				<li><a href="javascript:;" class="runoob-pop">登录</a></li>
-				-->
-      		</ul>
-			<ul class="mobile-nav">
-				<li><a href="//www.runoob.com/">首页</a></li>
-				<li><a href="/html/html-tutorial.html">HTML</a></li>
-				<li><a href="/css/css-tutorial.html">CSS</a></li>
-				<li><a href="/js/js-tutorial.html">JS</a></li>
-				<li><a href="/browser-history">本地书签</a></li>
-				<li><a href="javascript:void(0)" class="search-reveal">Search</a> </li>
-			</ul>
-			
-		</div>
-	</div>
-</div>
+            <div class="c-uhfh-actions" data-m='{"cN":"Header actions_cont","cT":"Container","id":"c9c3c1m1r1a1","sN":9,"aN":"c3c1m1r1a1"}'>
+                <div class="wf-menu">        <nav id="uhf-c-nav" aria-label="所有 Microsoft 菜单" data-m='{"cN":"GlobalNav_cont","cT":"Container","id":"c1c9c3c1m1r1a1","sN":1,"aN":"c9c3c1m1r1a1"}'>
+            <ul class="js-paddle-items">
+                <li>
+                    <div class="c-uhf-menu js-nav-menu">
+                        <button type="button" class="c-button-logo all-ms-nav" aria-label="所有 Microsoft 项目都会扩展以显示 Microsoft 产品和服务的列表" aria-expanded="false" data-m='{"cN":"GlobalNav_More_nonnav","id":"nn1c1c9c3c1m1r1a1","sN":1,"aN":"c1c9c3c1m1r1a1"}'> <span>所有 Microsoft</span></button>
+                        <ul class="f-multi-column f-multi-column-6" aria-hidden="true" data-m='{"cN":"More_cont","cT":"Container","id":"c2c1c9c3c1m1r1a1","sN":2,"aN":"c1c9c3c1m1r1a1"}'>
+                                    <li class="c-w0-contr">
+            <ul class="c-w0">
+        <li class="js-nav-menu single-link" data-m='{"cN":"M365_cont","cT":"Container","id":"c1c2c1c9c3c1m1r1a1","sN":1,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_0" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/microsoft-365" data-m='{"cN":"W0Nav_M365_nav","id":"n1c1c2c1c9c3c1m1r1a1","sN":1,"aN":"c1c2c1c9c3c1m1r1a1"}'>Microsoft 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Office_cont","cT":"Container","id":"c2c2c1c9c3c1m1r1a1","sN":2,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_1" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/microsoft-365/microsoft-office" data-m='{"cN":"W0Nav_Office_nav","id":"n1c2c2c1c9c3c1m1r1a1","sN":1,"aN":"c2c2c1c9c3c1m1r1a1"}'>Office</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows_cont","cT":"Container","id":"c3c2c1c9c3c1m1r1a1","sN":3,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_2" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/" data-m='{"cN":"W0Nav_Windows_nav","id":"n1c3c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c2c1c9c3c1m1r1a1"}'>Windows</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Surface_cont","cT":"Container","id":"c4c2c1c9c3c1m1r1a1","sN":4,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_3" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/surface" data-m='{"cN":"W0Nav_Surface_nav","id":"n1c4c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c2c1c9c3c1m1r1a1"}'>Surface</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Xbox_cont","cT":"Container","id":"c5c2c1c9c3c1m1r1a1","sN":5,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_4" class="js-subm-uhf-nav-link" href="https://www.xbox.com/" data-m='{"cN":"W0Nav_Xbox_nav","id":"n1c5c2c1c9c3c1m1r1a1","sN":1,"aN":"c5c2c1c9c3c1m1r1a1"}'>Xbox</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Deals_cont","cT":"Container","id":"c6c2c1c9c3c1m1r1a1","sN":6,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_5" class="js-subm-uhf-nav-link" href="https://www.microsoftstore.com.cn/promotion?WT.mc_id=msftcn_MSCOM_HP_DEALS_202103" data-m='{"cN":"W0Nav_Deals_nav","id":"n1c6c2c1c9c3c1m1r1a1","sN":1,"aN":"c6c2c1c9c3c1m1r1a1"}'>优惠</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Support_cont","cT":"Container","id":"c7c2c1c9c3c1m1r1a1","sN":7,"aN":"c2c1c9c3c1m1r1a1"}'>
+            <a id="l1_support" class="js-subm-uhf-nav-link" href="https://support.microsoft.com/zh-cn" data-m='{"cN":"W0Nav_Support_nav","id":"n1c7c2c1c9c3c1m1r1a1","sN":1,"aN":"c7c2c1c9c3c1m1r1a1"}'>支持</a>
+            
+        </li>
+            </ul>
+        </li>
 
-<div class="container sub-navigation sub-navigation-articles" style="display:none">
-	<div class="row">
-		<div class="col nav-sub">
-		<ul id="python">
-			<li class="cat-item"><a href="/python3/python3-tutorial.html">Python3 教程</a></li>
-			<li class="cat-item"><a href="/python/python-tutorial.html">Python2 教程</a></li>
-		</ul>
-		<ul id="vue">
-			<li class="cat-item"><a href="/vue3/vue3-tutorial.html">Vue3 教程</a></li>
-			<li class="cat-item"><a href="/vue/vue-tutorial.html">vue2 教程</a></li>
-		</ul>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c8c2c1c9c3c1m1r1a1","sN":8,"aN":"c2c1c9c3c1m1r1a1"}'>
 
-		<ul id="bootstrap">
-			<li class="cat-item"><a href="/bootstrap/bootstrap-tutorial.html">Bootstrap3 教程</a></li>
-			<li class="cat-item"><a href="/bootstrap4/bootstrap4-tutorial.html">Bootstrap4 教程</a></li>
-			<li class="cat-item"><a href="/bootstrap5/bootstrap5-tutorial.html">Bootstrap5 教程</a></li>
-			<li class="cat-item"><a href="/bootstrap/bootstrap-v2-tutorial.html">Bootstrap2 教程</a></li>
-		</ul>
-		</div>
-	</div>
-</div><!--  内容  -->
-<div class="container main">
-	<!-- 中间 -->
-	<div class="row">
-	
-<div class="runoob-col-md2">
-<div class="left-column">
-	<div class="tab" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-	<i class="fa fa-list" aria-hidden="true"></i> 
-	<span>Python 基础教程</span>
-	<a data-cate="48" href="javascript:void(0);" title="夜间模式"  id="moon"><i class="fa fa-moon-o" aria-hidden="true" style="line-height: 28px;font-size: 1.4em;margin: 4px 6px 0;"></i></a>
-	<a data-cate="48" style="display:none;" href="javascript:void(0);" title="日间模式"  id="sun" ><i class="fa fa-sun-o" aria-hidden="true" style="line-height: 28px;font-size: 1.4em;margin: 4px 6px 0;line-height: 28px;
-}"></i></a>
-	</div>
-	<div class="sidebar-box gallery-list">
-		<div class="design" id="leftcolumn">
-						<a target="_top" title="Python 基础教程"  href="/python/python-tutorial.html" >
-			Python 基础教程			</a>
-						<a target="_top" title="Python 简介"  href="/python/python-intro.html" >
-			Python 简介			</a>
-						<a target="_top" title="Python 环境搭建"  href="/python/python-install.html" >
-			Python 环境搭建			</a>
-			<a target="_top" title="Python 中文编码" href="python-chinese-encoding.html"> Python 中文编码 </a>			<a target="_top" title="Python 基础语法"  href="/python/python-basic-syntax.html" >
-			Python 基础语法			</a>
-						<a target="_top" title="Python 变量类型"  href="/python/python-variable-types.html" >
-			Python 变量类型			</a>
-						<a target="_top" title="Python 运算符"  href="/python/python-operators.html" >
-			Python 运算符			</a>
-						<a target="_top" title="Python 条件语句"  href="/python/python-if-statement.html" >
-			Python 条件语句			</a>
-						<a target="_top" title="Python 循环语句"  href="/python/python-loops.html" >
-			Python 循环语句			</a>
-						<a target="_top" title="Python While 循环语句"  href="/python/python-while-loop.html" >
-			Python While 循环语句			</a>
-						<a target="_top" title="Python for 循环语句"  href="/python/python-for-loop.html" >
-			Python for 循环语句			</a>
-						<a target="_top" title="Python 循环嵌套"  href="/python/python-nested-loops.html" >
-			Python 循环嵌套			</a>
-						<a target="_top" title="Python break 语句"  href="/python/python-break-statement.html" >
-			Python break 语句			</a>
-						<a target="_top" title="Python continue  语句"  href="/python/python-continue-statement.html" >
-			Python continue  语句			</a>
-						<a target="_top" title="Python pass 语句"  href="/python/python-pass-statement.html" >
-			Python pass 语句			</a>
-						<a target="_top" title="Python Number(数字)"  href="/python/python-numbers.html" >
-			Python Number(数字)			</a>
-						<a target="_top" title="Python 字符串"  href="/python/python-strings.html" >
-			Python 字符串			</a>
-						<a target="_top" title="Python 列表(List)"  href="/python/python-lists.html" >
-			Python 列表(List)			</a>
-						<a target="_top" title="Python 元组"  href="/python/python-tuples.html" >
-			Python 元组			</a>
-						<a target="_top" title="Python 字典(Dictionary)"  href="/python/python-dictionary.html" >
-			Python 字典(Dictionary)			</a>
-						<a target="_top" title="Python 日期和时间"  href="/python/python-date-time.html" >
-			Python 日期和时间			</a>
-						<a target="_top" title="Python 函数"  href="/python/python-functions.html" >
-			Python 函数			</a>
-						<a target="_top" title="Python 模块"  href="/python/python-modules.html" >
-			Python 模块			</a>
-						<a target="_top" title="Python 文件I/O"  href="/python/python-files-io.html" >
-			Python 文件I/O			</a>
-			<a target="_top" title="Python File 方法" href="file-methods.html">Python File 方法</a>			<a target="_top" title="Python 异常处理"  href="/python/python-exceptions.html" >
-			Python 异常处理			</a>
-			<a target="_top" title="Python OS 文件/目录方法" href="os-file-methods.html">Python OS 文件/目录方法</a>
-<a target="_top" title="Python 内置函数" href="python-built-in-functions.html">Python 内置函数</a>
-<br><h2 class="left"><span class="left_h2">Python</span> 高级教程</h2>			<a target="_top" title="Python 面向对象"  href="/python/python-object.html" >
-			Python 面向对象			</a>
-						<a target="_top" title="Python 正则表达式"  href="/python/python-reg-expressions.html" >
-			Python 正则表达式			</a>
-						<a target="_top" title="Python CGI 编程"  href="/python/python-cgi.html" >
-			Python CGI 编程			</a>
-						<a target="_top" title="Python 操作 MySQL 数据库"  href="/python/python-mysql.html" >
-			Python MySQL			</a>
-			<a target="_top" title="Python 网络编程" href="python-socket.html"> Python 网络编程 </a>			<a target="_top" title="Python SMTP发送邮件"  href="/python/python-email.html" >
-			Python SMTP			</a>
-						<a target="_top" title="Python 多线程"  href="/python/python-multithreading.html" >
-			Python 多线程			</a>
-						<a target="_top" title="Python XML 解析"  href="/python/python-xml.html" >
-			Python XML 解析			</a>
-						<a target="_top" title="Python GUI 编程(Tkinter)"  href="/python/python-gui-tkinter.html" >
-			Python GUI 编程(Tkinter)			</a>
-						<a target="_top" title="Python2.x 与 3​​.x 版本区别"  href="/python/python-2x-3x.html" >
-			Python2.x 与 3​​.x 版本区别			</a>
-						<a target="_top" title="Python IDE"  href="/python/python-ide.html" >
-			Python IDE			</a>
-						<a target="_top" title="Python JSON"  href="/python/python-json.html" >
-			Python JSON			</a>
-						<a target="_top" title="Python 100例"  href="/python/python-100-examples.html" >
-			Python 100例			</a>
-			<a target="_blank" title="Python 测验" href="/quiz/python-quiz.html"> Python 测验 </a>	
-		</div>
-	</div>	
-</div>
-</div>	<div class="col middle-column">
-		
-	
-	<div class="article">
-			<div class="article-heading-ad" style="display: none;">
-		
-		</div>
-		<div class="previous-next-links">
-			<div class="previous-design-link"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i> <a href="http://www.runoob.com/python/python-xml.html" rel="prev"> Python XML 解析</a> </div>
-			<div class="next-design-link"><a href="http://www.runoob.com/python/att-list-cmp.html" rel="next"> Python List cmp()方法</a> <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></div>
-		</div>
-		<div class="article-body">
-		
-			<div class="article-intro" id="content">
-			
-			<h1>Python GUI编程(Tkinter)</h1>
-<p>Python 提供了多个图形开发界面的库，几个常用 Python GUI 库如下：</p>
-
-<ul>
-<li><p><strong>Tkinter：</strong> Tkinter 模块(Tk 接口)是 Python 的标准 Tk GUI 工具包的接口 .Tk 和 Tkinter 可以在大多数的 Unix 平台下使用,同样可以应用在 Windows 和 Macintosh 系统里。Tk8.0 的后续版本可以实现本地窗口风格,并良好地运行在绝大多数平台中。</p>
-</li>
-<li><p><strong>wxPython：</strong>wxPython 是一款开源软件，是 Python 语言的一套优秀的 GUI 图形库，允许 Python 程序员很方便的创建完整的、功能健全的 GUI 用户界面。</p>
-</li>
-<li><p><strong>Jython：</strong>Jython 程序可以和 Java 无缝集成。除了一些标准模块，Jython 使用 Java 的模块。Jython 几乎拥有标准的Python 中不依赖于 C 语言的全部模块。比如，Jython 的用户界面将使用  Swing，AWT或者 SWT。Jython 可以被动态或静态地编译成 Java 字节码。</p>
-</li>
-</ul>
-<hr>
-<h2>Tkinter 编程</h2>
-<p>Tkinter 是 Python 的标准 GUI 库。Python 使用 Tkinter 可以快速的创建 GUI 应用程序。</p>
-<p>由于 Tkinter 是内置到 python 的安装包中、只要安装好 Python 之后就能 import Tkinter 库、而且 IDLE 也是用 Tkinter 编写而成、对于简单的图形界面 Tkinter 还是能应付自如。</p>
-
-
-<blockquote><p><strong>注意</strong>：Python3.x 版本使用的库名为 tkinter,即首写字母 T 为小写。</p>
-<pre>import tkinter</pre></blockquote>
-
-
-<p>创建一个GUI程序</p>
-<ul>
-<li>1、导入 Tkinter 模块</li>
-<li>2、创建控件</li>
-<li>3、指定这个控件的 master， 即这个控件属于哪一个</li>
-<li>4、告诉 GM(geometry manager) 有一个控件产生了。</li>
-</ul>
-
-<div class="example"> 
-<h2 class="example">实例(Python3.x)</h2> 
-<div class="example_code">
-<div class="hl-main"><span class="hl-comment">#!/usr/bin/python3</span><span class="hl-code">
- 
-</span><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">tkinter</span><span class="hl-code">
-</span><span class="hl-identifier">top</span><span class="hl-code"> = </span><span class="hl-identifier">tkinter</span><span class="hl-code">.</span><span class="hl-identifier">Tk</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
-</span><span class="hl-comment"># 进入消息循环</span><span class="hl-code">
-</span><span class="hl-identifier">top</span><span class="hl-code">.</span><span class="hl-identifier">mainloop</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span></div>
-</div>
-</div>
-<div class="example"> 
-<h2 class="example">实例(Python2.x)</h2> 
-<div class="example_code">
-<div class="hl-main"><span class="hl-comment">#!/usr/bin/python</span><span class="hl-code">
-</span><span class="hl-comment"># -*- coding: UTF-8 -*-</span><span class="hl-code">
- 
-</span><span class="hl-reserved">import</span><span class="hl-code"> </span><span class="hl-identifier">Tkinter</span><span class="hl-code">
-</span><span class="hl-identifier">top</span><span class="hl-code"> = </span><span class="hl-identifier">Tkinter</span><span class="hl-code">.</span><span class="hl-identifier">Tk</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
-</span><span class="hl-comment"># 进入消息循环</span><span class="hl-code">
-</span><span class="hl-identifier">top</span><span class="hl-code">.</span><span class="hl-identifier">mainloop</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span></div>
-</div>
-</div>
-<p>以上代码执行结果如下图:</p>
-<p><img class="attachment-full" alt="tkwindow" src="//www.runoob.com/wp-content/uploads/2013/12/tkwindow.jpg"/>
-</p>
-<div class="example"> 
-<h2 class="example">实例</h2> 
-<div class="example_code">
-<div class="hl-main"><span class="hl-comment">#!/usr/bin/python</span><span class="hl-code">
-</span><span class="hl-comment"># -*- coding: UTF-8 -*-</span><span class="hl-code">
- 
-</span><span class="hl-comment"># Python2.x 导入方法</span><span class="hl-code">
-</span><span class="hl-reserved">from</span><span class="hl-code"> </span><span class="hl-identifier">Tkinter</span><span class="hl-code"> </span><span class="hl-reserved">import</span><span class="hl-code"> *           </span><span class="hl-comment"># 导入 Tkinter 库</span><span class="hl-code">
-</span><span class="hl-comment"># Python3.x 导入方法</span><span class="hl-code">
-</span><span class="hl-comment">#from tkinter import * </span><span class="hl-code">
-</span><span class="hl-identifier">root</span><span class="hl-code"> = </span><span class="hl-identifier">Tk</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">                     </span><span class="hl-comment"># 创建窗口对象的背景色</span><span class="hl-code">
-                                </span><span class="hl-comment"># 创建两个列表</span><span class="hl-code">
-</span><span class="hl-identifier">li</span><span class="hl-code">     = </span><span class="hl-brackets">[</span><span class="hl-quotes">'</span><span class="hl-string">C</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">python</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">php</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">html</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">SQL</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">java</span><span class="hl-quotes">'</span><span class="hl-brackets">]</span><span class="hl-code">
-</span><span class="hl-identifier">movie</span><span class="hl-code">  = </span><span class="hl-brackets">[</span><span class="hl-quotes">'</span><span class="hl-string">CSS</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">jQuery</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">Bootstrap</span><span class="hl-quotes">'</span><span class="hl-brackets">]</span><span class="hl-code">
-</span><span class="hl-identifier">listb</span><span class="hl-code">  = </span><span class="hl-identifier">Listbox</span><span class="hl-brackets">(</span><span class="hl-identifier">root</span><span class="hl-brackets">)</span><span class="hl-code">          </span><span class="hl-comment">#  创建两个列表组件</span><span class="hl-code">
-</span><span class="hl-identifier">listb2</span><span class="hl-code"> = </span><span class="hl-identifier">Listbox</span><span class="hl-brackets">(</span><span class="hl-identifier">root</span><span class="hl-brackets">)</span><span class="hl-code">
-</span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-identifier">item</span><span class="hl-code"> </span><span class="hl-reserved">in</span><span class="hl-code"> </span><span class="hl-identifier">li</span><span class="hl-code">:                 </span><span class="hl-comment"># 第一个小部件插入数据</span><span class="hl-code">
-    </span><span class="hl-identifier">listb</span><span class="hl-code">.</span><span class="hl-identifier">insert</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-identifier">item</span><span class="hl-brackets">)</span><span class="hl-code">
- 
-</span><span class="hl-reserved">for</span><span class="hl-code"> </span><span class="hl-identifier">item</span><span class="hl-code"> </span><span class="hl-reserved">in</span><span class="hl-code"> </span><span class="hl-identifier">movie</span><span class="hl-code">:              </span><span class="hl-comment"># 第二个小部件插入数据</span><span class="hl-code">
-    </span><span class="hl-identifier">listb2</span><span class="hl-code">.</span><span class="hl-identifier">insert</span><span class="hl-brackets">(</span><span class="hl-number">0</span><span class="hl-code">,</span><span class="hl-identifier">item</span><span class="hl-brackets">)</span><span class="hl-code">
- 
-</span><span class="hl-identifier">listb</span><span class="hl-code">.</span><span class="hl-identifier">pack</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">                    </span><span class="hl-comment"># 将小部件放置到主窗口中</span><span class="hl-code">
-</span><span class="hl-identifier">listb2</span><span class="hl-code">.</span><span class="hl-identifier">pack</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">
-</span><span class="hl-identifier">root</span><span class="hl-code">.</span><span class="hl-identifier">mainloop</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">                 </span><span class="hl-comment"># 进入消息循环</span></div>
-</div>
-</div>
-<p>以上代码执行结果如下图:</p><img src="//www.runoob.com/wp-content/uploads/2013/12/tk.jpg" style="height: 300px"/>
-<hr>
-<h2>Tkinter 组件</h2>
-<p>Tkinter的提供各种控件，如按钮，标签和文本框，一个GUI应用程序中使用。这些控件通常被称为控件或者部件。</p>
-
-<p>目前有15种Tkinter的部件。我们提出这些部件以及一个简短的介绍，在下面的表:</p>
-<table class="reference">
-<tbody><tr>
-<th style="width:10%">控件</th><th>描述</th></tr>
-<tr><td><a href="/python/python-tk-button.html" rel="noopener noreferrer" target="_blank">Button</a></td><td>按钮控件；在程序中显示按钮。</td></tr>
-<tr><td><a href="/python/python-tk-canvas.html" rel="noopener noreferrer" target="_blank">Canvas</a></td><td>画布控件；显示图形元素如线条或文本</td></tr>
-<tr><td><a href="/python/python-tk-checkbutton.html" rel="noopener noreferrer" target="_blank">Checkbutton</a></td><td>多选框控件；用于在程序中提供多项选择框</td></tr>
-<tr><td><a href="/python/python-tkinter-entry.html" rel="noopener noreferrer" target="_blank">Entry</a></td><td>输入控件；用于显示简单的文本内容</td></tr>
-<tr><td><a href="/python/python-tk-frame.html" rel="noopener noreferrer" target="_blank">Frame</a></td><td>框架控件；在屏幕上显示一个矩形区域，多用来作为容器</td></tr>
-<tr><td><a href="/python/python-tk-label.html" rel="noopener noreferrer" target="_blank">Label</a></td><td>标签控件；可以显示文本和位图</td></tr>
-<tr><td>Listbox</td><td>列表框控件；在Listbox窗口小部件是用来显示一个字符串列表给用户</td></tr>
-<tr><td>Menubutton</td><td>菜单按钮控件，用于显示菜单项。</td></tr>
-<tr><td>Menu</td><td>菜单控件；显示菜单栏,下拉菜单和弹出菜单</td></tr>
-<tr><td>Message</td><td>消息控件；用来显示多行文本，与label比较类似</td></tr>
-<tr><td>Radiobutton</td><td>单选按钮控件；显示一个单选的按钮状态</td></tr>
-<tr><td>Scale</td><td>范围控件；显示一个数值刻度，为输出限定范围的数字区间</td></tr>
-<tr><td>Scrollbar</td><td>滚动条控件，当内容超过可视化区域时使用，如列表框。.</td></tr>
-<tr><td>Text</td><td>文本控件；用于显示多行文本</td></tr>
-<tr><td>Toplevel</td><td>容器控件；用来提供一个单独的对话框，和Frame比较类似</td></tr>
-<tr><td>Spinbox</td><td>输入控件；与Entry类似，但是可以指定输入范围值</td></tr>
-<tr><td>PanedWindow</td><td>PanedWindow是一个窗口布局管理的插件，可以包含一个或者多个子控件。</td></tr>
-<tr><td>LabelFrame</td><td> labelframe 是一个简单的容器控件。常用与复杂的窗口布局。</td></tr>
-<tr><td>tkMessageBox</td><td>用于显示你应用程序的消息框。</td></tr>
-</tbody></table>
-<hr>
-<h2>标准属性</h2>
-<p>标准属性也就是所有控件的共同属性，如大小，字体和颜色等等。</p>
-<table class="reference">
-<tbody>
-<tr>
-<td>属性</td>
-<td>描述</td>
-</tr>
-<tr>
-<td>Dimension</td>
-<td>控件大小；</td>
-</tr>
-<tr>
-<td>Color</td>
-<td>控件颜色；</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>控件字体；</td>
-</tr>
-<tr>
-<td>Anchor</td>
-<td>锚点；</td>
-</tr>
-<tr>
-<td>Relief</td>
-<td>控件样式；</td>
-</tr>
-<tr>
-<td>Bitmap</td>
-<td>位图；</td>
-</tr>
-<tr>
-<td>Cursor</td>
-<td>光标；</td>
-</tr>
-</tbody>
-</table>
-<hr><h2>几何管理</h2>
-<p>Tkinter控件有特定的几何状态管理方法，管理整个控件区域组织，以下是Tkinter公开的几何管理类：包、网格、位置</p>
-<table class="reference">
-<tbody>
-<tr>
-<td>几何方法</td>
-<td>描述</td>
-</tr>
-<tr>
-<td>pack()</td>
-<td>包装；</td>
-</tr>
-<tr>
-<td>grid()</td>
-<td>网格；</td>
-</tr>
-<tr>
-<td>place()</td>
-<td>位置；</td>
-</tr>
-</tbody>
-</table>			<!-- 其他扩展 -->
-						
-			</div>
-			
-		</div>
-		
-		<div class="previous-next-links">
-			<div class="previous-design-link"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i> <a href="http://www.runoob.com/python/python-xml.html" rel="prev"> Python XML 解析</a> </div>
-			<div class="next-design-link"><a href="http://www.runoob.com/python/att-list-cmp.html" rel="next"> Python List cmp()方法</a> <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></div>
-		</div>
-		<!-- 笔记列表 -->
-		<style>
-.wrapper {
-  /*text-transform: uppercase; */
-  background: #ececec;
-  color: #555;
-  cursor: help;
-  font-family: "Gill Sans", Impact, sans-serif;
-  font-size: 20px;
-  position: relative;
-  text-align: center;
-  width: 200px;
-  -webkit-transform: translateZ(0); /* webkit flicker fix */
-  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
-}
-
-.wrapper .tooltip {
-  white-space: nowrap;
-  font-size: 14px;
-  text-align: left;
-  background: #96b97d;
-  bottom: 100%;
-  color: #fff;
-  display: block;
-  left: -25px;
-  margin-bottom: 15px;
-  opacity: 0;
-  padding: 14px;
-  pointer-events: none;
-  position: absolute;
-  
-  -webkit-transform: translateY(10px);
-     -moz-transform: translateY(10px);
-      -ms-transform: translateY(10px);
-       -o-transform: translateY(10px);
-          transform: translateY(10px);
-  -webkit-transition: all .25s ease-out;
-     -moz-transition: all .25s ease-out;
-      -ms-transition: all .25s ease-out;
-       -o-transition: all .25s ease-out;
-          transition: all .25s ease-out;
-  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-     -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-      -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-       -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-}
-.tooltip a {
-	color:#fff;
-}
-/* This bridges the gap so you can mouse into the tooltip without it disappearing */
-.wrapper .tooltip:before {
-  bottom: -20px;
-  content: " ";
-  display: block;
-  height: 20px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}  
-
-/* CSS Triangles - see Trevor's post */
-.wrapper .tooltip:after {
-  border-left: solid transparent 10px;
-  border-right: solid transparent 10px;
-  border-top: solid #96b97d 10px;
-  bottom: -10px;
-  content: " ";
-  height: 0;
-  left: 20%;
-  margin-left: -13px;
-  position: absolute;
-  width: 0;
-}
-.wrapper .tooltip1 {
-	margin-left: 50px;
-	padding-top: 0px;
-}
-/*
-.wrapper:hover .tooltip {
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: translateY(0px);
-     -moz-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-       -o-transform: translateY(0px);
-          transform: translateY(0px);
-}
-*/
-/* IE can just show/hide with no transition */
-.lte8 .wrapper .tooltip {
-  display: none;
-}
-
-.lte8 .wrapper:hover .tooltip {
-  display: block;
-}
-
-</style>
-
-<link rel="stylesheet" href="https://static.runoob.com/assets/upvotejs/dist/upvotejs/upvotejs.css">
-<script src="https://static.runoob.com/assets/upvotejs/dist/upvotejs/upvotejs.vanilla.js"></script>
-<script src="https://static.runoob.com/assets/upvotejs/dist/upvotejs/upvotejs.jquery.js"></script>
-<div class="title" id="comments">
-	<h2 class="">
-    <div class="altblock">
-		    	<i style="font-size:28px;margin-top: 8px;" class="fa fa-pencil-square-o" aria-hidden="true"></i>
-    	    </div>
-    <span class="mw-headline" id="qa_headline">1  篇笔记</span>
-	<span class="mw-headline" id="user_add_note" style="float:right;line-height: 62px;padding-right: 14px;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  写笔记</span>
-    </h2>
-</div>
-
-<div id="postcomments"   >
-	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-53124"><span class="comt-f">#0</span><div class="comt-avatar wrapper"><i style="font-size:36px;" class="fa fa-user-circle" aria-hidden="true"></i><div class="tooltip"><p><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;AAA</p><p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;AAA***A.com</p></div><div id="runoobvote-id-53124" data-commid = "53124" class="upvotejs"><a class="upvote"></a> <span class="count">699</span></div></div><div class="comt-main" id="div-comment-53124"><p>字符串转 md5 工具(Python3 下运行)：</p>
-<pre>#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from tkinter import *
-import hashlib
-import time
-
-LOG_LINE_NUM = 0
-
-class MY_GUI():
-    def __init__(self,init_window_name):
-        self.init_window_name = init_window_name
-
-
-    #设置窗口
-    def set_init_window(self):
-        self.init_window_name.title("文本处理工具_v1.2")           #窗口名
-        #self.init_window_name.geometry('320x160+10+10')                         #290 160为窗口大小，+10 +10 定义窗口弹出时的默认展示位置
-        self.init_window_name.geometry('1068x681+10+10')
-        #self.init_window_name["bg"] = "pink"                                    #窗口背景色，其他背景色见：blog.csdn.net/chl0000/article/details/7657887
-        #self.init_window_name.attributes("-alpha",0.9)                          #虚化，值越小虚化程度越高
-        #标签
-        self.init_data_label = Label(self.init_window_name, text="待处理数据")
-        self.init_data_label.grid(row=0, column=0)
-        self.result_data_label = Label(self.init_window_name, text="输出结果")
-        self.result_data_label.grid(row=0, column=12)
-        self.log_label = Label(self.init_window_name, text="日志")
-        self.log_label.grid(row=12, column=0)
-        #文本框
-        self.init_data_Text = Text(self.init_window_name, width=67, height=35)  #原始数据录入框
-        self.init_data_Text.grid(row=1, column=0, rowspan=10, columnspan=10)
-        self.result_data_Text = Text(self.init_window_name, width=70, height=49)  #处理结果展示
-        self.result_data_Text.grid(row=1, column=12, rowspan=15, columnspan=10)
-        self.log_data_Text = Text(self.init_window_name, width=66, height=9)  # 日志框
-        self.log_data_Text.grid(row=13, column=0, columnspan=10)
-        #按钮
-        self.str_trans_to_md5_button = Button(self.init_window_name, text="字符串转MD5", bg="lightblue", width=10,command=self.str_trans_to_md5)  # 调用内部方法  加()为直接调用
-        self.str_trans_to_md5_button.grid(row=1, column=11)
-
-
-    #功能函数
-    def str_trans_to_md5(self):
-        src = self.init_data_Text.get(1.0,END).strip().replace("\n","").encode()
-        #print("src =",src)
-        if src:
-            try:
-                myMd5 = hashlib.md5()
-                myMd5.update(src)
-                myMd5_Digest = myMd5.hexdigest()
-                #print(myMd5_Digest)
-                #输出到界面
-                self.result_data_Text.delete(1.0,END)
-                self.result_data_Text.insert(1.0,myMd5_Digest)
-                self.write_log_to_Text("INFO:str_trans_to_md5 success")
-            except:
-                self.result_data_Text.delete(1.0,END)
-                self.result_data_Text.insert(1.0,"字符串转MD5失败")
-        else:
-            self.write_log_to_Text("ERROR:str_trans_to_md5 failed")
-
-
-    #获取当前时间
-    def get_current_time(self):
-        current_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-        return current_time
-
-
-    #日志动态打印
-    def write_log_to_Text(self,logmsg):
-        global LOG_LINE_NUM
-        current_time = self.get_current_time()
-        logmsg_in = str(current_time) +" " + str(logmsg) + "\n"      #换行
-        if LOG_LINE_NUM &lt;= 7:
-            self.log_data_Text.insert(END, logmsg_in)
-            LOG_LINE_NUM = LOG_LINE_NUM + 1
-        else:
-            self.log_data_Text.delete(1.0,2.0)
-            self.log_data_Text.insert(END, logmsg_in)
-
-
-def gui_start():
-    init_window = Tk()              #实例化出一个父窗口
-    ZMJ_PORTAL = MY_GUI(init_window)
-    # 设置根窗口默认属性
-    ZMJ_PORTAL.set_init_window()
-
-    init_window.mainloop()          #父窗口进入事件循环，可以理解为保持窗口运行，否则界面不展示
-
-
-gui_start()</pre><div class="comt-meta wrapper"><span class="comt-author"><a target="_blank" href="javascript:;">AAA</a><div class="tooltip tooltip1"><p><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;AAA</p><p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;AAA***A.com</p></div></span>1年前 (2020-04-28)</div></div></li><!-- #comment-## -->
-	</ol>
-	<div class="pagenav">
-			</div>
-</div>
-<div id="respond" class="no_webshot"> 
-		<div class="comment-signarea" style="display:none; padding: 20px 20px;"> 
-	<h3 class="text-muted" id="share_code" style="color: #799961;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 点我分享笔记</h3>
-	<!--
-	<p style="font-size:14px;">笔记需要是本篇文章的内容扩展！</p><br>
-	<p style="font-size:12px;"><a href="//www.runoob.com/tougao" target="_blank">文章投稿，可点击这里</a></p>
-	<p style="font-size:14px;"><a href="/w3cnote/runoob-user-test-intro.html#invite" target="_blank">注册邀请码获取方式</a></p>
-		<h3 class="text-muted"><i class="fa fa-info-circle" aria-hidden="true"></i> 分享笔记前必须<a href="javascript:;" class="runoob-pop">登录</a>！</h3>
-		<p><a href="/w3cnote/runoob-user-test-intro.html#invite" target="_blank">注册邀请码获取方式</a></p>-->
-	</div>
-		
-	<form action="/wp-content/themes/runoob/option/addnote.php" method="post" id="commentform" style="display:none;">
-		<div class="comt">
-			<div class="comt-title">
-				<i style="font-size:36px;" class="fa fa-user-circle" aria-hidden="true"></i>				<p><a id="cancel-comment-reply-link" href="javascript:;">取消</a></p>
-			</div>
-			<div class="comt-box">
-			<div id="mded"></div>
-			
-				<div class="comt-ctrl">
-					<div class="comt-tips"><input type='hidden' name='comment_post_ID' value='4621' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
-					<button type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-pencil" aria-hidden="true"></i> 分享笔记</button>
-				</div>
-			</div>
-		
-				
-					<div class="comt-comterinfo"> 
-						<ul id="comment-author-info">
-							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="text-muted">昵称 (必填)</span></li>
-							<li class="form-inline"><label class="hide" for="email">邮箱</label><input class="ipt" type="text" name="email" id="email" value="" tabindex="3" placeholder="邮箱"><span class="text-muted">邮箱 (必填)</span></li>
-							<li class="form-inline"><label class="hide" for="url">引用地址</label><input class="ipt" type="text" name="url" id="url" value="" tabindex="4" placeholder="引用地址"><span class="text-muted">引用地址</span></li>
-						</ul>
-					</div>
-				
-			
-		</div>
-
-	</form>
-	</div>
-<script type="text/javascript">
-$(function() {
-	//初始化编辑器
-	
-	var editor = new Simditor({
-	  textarea: $('#mded'),
-	  placeholder: '写笔记...',
-	  upload:false,
-	 // upload: {url:'/api/comment_upload_file.php',params: null,fileKey: 'upload_file',connectionCount: 1,leaveConfirm: '文件正在上传，您确定离开?'},
-	  defaultImage: 'https://www.runoob.com/images/logo.png',
-	  codeLanguages: '',
-	  autosave: 'editor-content',
-	  toolbar: [  'bold','code','ul','ol','image' ]
-	});
-	editor.on('selectionchanged', function() {
-		$(".code-popover").hide();
-	});
-
-	// 提交数据
-	$("#share_code").click(function() {
-		$(".comment-signarea").hide();
-		$("#commentform").show();
-		
-	});
-	$("#user_add_note").click(function() {
-		$(".comment-signarea").hide();
-		$("#commentform").show();
-		$('html, body').animate({
-       	    scrollTop: $("#respond").offset().top
-    	}, 200);
-	});
-
-	// 提交笔记
-	var commentform=$('#commentform');
-	commentform.prepend('<div id="comment-status" style="display:none;" ></div>');
-	var statusdiv=$('#comment-status');
-	
-	commentform.submit(function(e){
-		e.preventDefault();
-		var noteContent = editor.getValue();
-		// console.log(noteContent);
-		noteContent = noteContent.replace(/<pre><code>/g,"<pre>");
-		noteContent = noteContent.replace(/<\/code><\/pre>/g,"</pre>");
-		
-		// 系列化表单数据
-		var comment_parent = 0;
-		var is_user_logged_in = $("#is_user_logged_in").val();
-		var comment_post_ID =  4621;
-		var _wp_unfiltered_html_comment = $("#_wp_unfiltered_html_comment").val();
-		var comment = noteContent;
-		var author = $("#author").val();
-		var url = $("#url").val();
-		var email = $("#email").val();
-		if(isBlank(author) && is_user_logged_in==0) {
-			statusdiv.html('<p  class="ajax-error">请输入昵称！</p>').show();
-		} else if(isBlank(email)  && is_user_logged_in==0) {
-			statusdiv.html('<p  class="ajax-error">请输入邮箱！</p>').show();
-		} else {
-			// var formdata=commentform.serialize() + "&comment=" + noteContent ;
-			// 添加状态信息
-			statusdiv.html('<p>Processing...</p>').show();
-			// 获取表单提交地址
-			var formurl=commentform.attr('action');
-			
-			// 异步提交
-			$.ajax({
-					type: 'post',
-					url: formurl,
-					dataType:'json',
-					data: {"comment_parent":comment_parent,"comment_post_ID":comment_post_ID, "_wp_unfiltered_html_comment":_wp_unfiltered_html_comment,"comment":comment,"url":url, "email":email,"author":author},
-					error: function(XMLHttpRequest, textStatus, errorThrown){
-					statusdiv.html('<p class="ajax-error" >数据不完整或表单提交太快了！</p>').show();
-				},
-				success: function(data, textStatus){
-					if(data.errorno=="0") {
-						$("#submit").prop('disabled', true);
-						statusdiv.html('<p class="ajax-success" >笔记已提交审核，感谢分享笔记！</p>').show();
-						alert('笔记已提交审核，感谢分享笔记！');
-					}else{
-						statusdiv.html('<p class="ajax-error" >'+data.msg+'</p>').show();
-					}
-					commentform.find('textarea[name=comment]').val('');
-				}
-			});
-			setTimeout(function(){
-		        $("#submit").prop('disabled', false);
-		    }, 10*1000);
-		}
-		return false;
-
-	});
-	$(".comt-author").click(function() {
-		href = $(this).children("a").attr("href");
-		if(href.indexOf("/note/")!=-1) {
-			var win = window.open(href, '_blank');
-  			win.focus();
-		}
-	});
-	$(".comt-meta span").hover(function(){
-		$(this).children(".tooltip").css({ "opacity": 1, "pointer-events": "auto"});
-	},function(){
-		$(this).children(".tooltip").removeAttr("style");
-	});
-	/*
-	$(".wrapper i").hover(function(){
-		$(this).siblings(".tooltip").css({ "opacity": 1, "pointer-events": "auto"});
-	},function(){
-		$(this).siblings(".tooltip").css({ "opacity": 0, "pointer-events": "auto"});
-	});
-	*/
-	//Upvote.create('runoobvote-id', {callback: vote_callback});
-	var ajaxurl = 'https://www.runoob.com/wp-admin/admin-ajax.php';
-	var callback = function(data) {
-		//console.log($('#runoobvote-id').upvote('upvoted'));
-		//console.log($('#runoobvote-id').upvote('downvoted'));
-		//console.log(data);
-		_vote_action = data.action;
-		id_arr = data.id.split('-');
-		um_id= id_arr[2];
-		//console.log(um_id);
-		
-		var re = /^[1-9]+/;
-		if (re.test(um_id)) { 
-			var ajax_data = {
-				_vote_action: _vote_action,
-				action: "pinglun_zan",
-				um_id: um_id,
-				um_action: "ding"
-			};
-			//console.log(ajax_data);
-			$.post(ajaxurl,ajax_data,function(status){
-				//if(status.vote_num>999) {
-				//	_voteHtml = '<span style="display: block; text-align: center;font-size: 20px; color: #6a737c; margin: 8px 0;">'+kFormatter(status.vote_num) +'</span>';
-				//	$("#runoobvote-id-" + um_id + " .count").hide().after(_voteHtml);
-				//}
-				
-			});
-		}
-	};
-	if($('#comments').length && $('.upvotejs').length){
-		$('.upvotejs').upvote({id: 4621, callback: callback});
-	
-		$.post(ajaxurl,{"action":"pinglun_zan","postid":4621},function(data){  
-			$(data).each(function(key,value) {
-				$("#runoobvote-id-" + value.commid + " .upvote").addClass(value.upvotejs_class);
-				$("#runoobvote-id-" + value.commid + " .downvote").addClass(value.downvote_class);
-				$("#runoobvote-id-" + value.commid + " .count").text(value.upvote_count);
-			})
-		},'json');
-		
-	}
-	
-	
-});
-function isBlank(str) {
-    return (!str || /^\s*$/.test(str));
-}
-function kFormatter(num) {
-	// return num;
-    return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
-}
-
-</script>
-
-<link rel="stylesheet" href="/wp-content/themes/runoob/assets/css/qa.css?1.43">
-<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/simditor/2.3.6/styles/simditor.min.css" />
-<script type="text/javascript" src="https://static.runoob.com/assets/simditor/2.3.6/scripts/module.js"></script>
-<script type="text/javascript" src="//static.runoob.com/assets/simditor/2.3.6/scripts/hotkeys.js"></script>
-<script type="text/javascript" src="//static.runoob.com/assets/simditor/2.3.6/scripts/uploader.js"></script>
-<script type="text/javascript" src="https://cdn.staticfile.org/simditor/2.3.6/lib/simditor.min.js"></script>
-<script type="text/javascript" src="https://static.runoob.com/assets/simditor/2.3.6/scripts/simditor-autosave.js"></script>
-		<div class="sidebar-box ">
-				<div id="ad-336280" >
-
-		<style>	
-.responsive_ad1 { display:none; }
-@media(min-width: 800px) { .responsive_ad1 {  display:block;margin:0 auto;} }
-
-</style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 移动版 自动调整 -->
-<ins class="adsbygoogle responsive_ad1"
-     style="min-width:400px;max-width:728px;width:100%;height:90px;"
-     data-ad-client="ca-pub-5751451760833794"
-     data-ad-slot="1691338467"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-		</div>
-				</div>
-		
-	</div>
-</div>
-	
-
-<!-- 右边栏 -->
-<div class="fivecol last right-column">
-<!--
-	<div class="tab tab-light-blue" style="text-align: center;">关注微信</div>
-	<div class="sidebar-box">
-		<a href="http://m.runoob.com/" target="_blank"> <img src="http://www.runoob.com/wp-content/themes/w3cschool.cc/assets/img/qrcode.jpg" alt="移动版"> </a>
-		<div class="qqinfo">
-		 <a target="_blank" href="http://jq.qq.com/?_wv=1027&k=dOwwKN" id="qqhref">
-		<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="菜鸟家族" title="菜鸟家族"></a>
-		<span>(群号：<span id="qqid">365967760</span>)</span>
-		</div>
-		
-	</div>
-	-->
-<style>
-.sidebar-tree .double-li {
-	width:300px;
-}
-.sidebar-tree .double-li li {
-    width: 44%;
-    line-height: 1.5em;
-    border-bottom: 1px solid #ccc;
-    float: left;
-    display: inline;
-}
-</style>
-
-	
-		<div class="sidebar-box re-box re-box-large">
-		<div class="sidebar-box recommend-here" style="margin: 0 auto;">
-			<a href="javascript:void(0);" style="font-size: 16px; color:#64854c;font-weight:bold;"> <i class="fa fa-list" aria-hidden="true"></i> 分类导航</a>
-		</div>
-	<div class="sidebar-box sidebar-cate">
-		
-		<div class="sidebar-tree" >
-			<ul><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> HTML / CSS</a><ul class="double-li"><li><a title="HTML 教程" href="//www.runoob.com/html/html-tutorial.html">HTML 教程</a></li><li><a title="HTML5 教程" href="//www.runoob.com/html/html5-intro.html">HTML5 教程</a></li><li><a title="CSS 教程" href="//www.runoob.com/css/css-tutorial.html">CSS 教程</a></li><li><a title="CSS3 教程" href="//www.runoob.com/css3/css3-tutorial.html">CSS3 教程</a></li><li><a title="Bootstrap3 教程" href="//www.runoob.com/bootstrap/bootstrap-tutorial.html">Bootstrap3 教程</a></li><li><a title="Bootstrap4 教程" href="//www.runoob.com/bootstrap4/bootstrap4-tutorial.html">Bootstrap4 教程</a></li><li><a title="Font Awesome 教程" href="//www.runoob.com/font-awesome/fontawesome-tutorial.html">Font Awesome 教程</a></li><li><a title="Foundation 教程" href="//www.runoob.com/foundation/foundation-tutorial.html">Foundation 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> JavaScript</a><ul class="double-li"><li><a title="JavaScript 教程" href="//www.runoob.com/js/js-tutorial.html">JavaScript 教程</a></li><li><a title="HTML DOM 教程" href="//www.runoob.com/htmldom/htmldom-tutorial.html">HTML DOM 教程</a></li><li><a title="jQuery 教程" href="//www.runoob.com/jquery/jquery-tutorial.html">jQuery 教程</a></li><li><a title="AngularJS 教程" href="//www.runoob.com/angularjs/angularjs-tutorial.html">AngularJS 教程</a></li><li><a title="AngularJS2 教程" href="//www.runoob.com/angularjs2/angularjs2-tutorial.html">AngularJS2 教程</a></li><li><a title="Vue.js 教程" href="//www.runoob.com/vue2/vue-tutorial.html">Vue.js 教程</a></li><li><a title="Vue3 教程" href="//www.runoob.com/vue3/vue3-tutorial.html">Vue3 教程</a></li><li><a title="React 教程" href="//www.runoob.com/react/react-tutorial.html">React 教程</a></li><li><a title="TypeScript 教程" href="//www.runoob.com/typescript/ts-tutorial.html">TypeScript 教程</a></li><li><a title="jQuery UI 教程" href="//www.runoob.com/jqueryui/jqueryui-tutorial.html">jQuery UI 教程</a></li><li><a title="jQuery EasyUI 教程" href="//www.runoob.com/jeasyui/jqueryeasyui-tutorial.html">jQuery EasyUI 教程</a></li><li><a title="Node.js 教程" href="//www.runoob.com/nodejs/nodejs-tutorial.html">Node.js 教程</a></li><li><a title="AJAX 教程" href="//www.runoob.com/ajax/ajax-tutorial.html">AJAX 教程</a></li><li><a title="JSON 教程" href="//www.runoob.com/json/json-tutorial.html">JSON 教程</a></li><li><a title="Echarts 教程" href="//www.runoob.com/echarts/echarts-tutorial.html">Echarts 教程</a></li><li><a title="Highcharts 教程" href="//www.runoob.com/highcharts/highcharts-tutorial.html">Highcharts 教程</a></li><li><a title="Google 地图 教程" href="//www.runoob.com/googleapi/google-maps-basic.html">Google 地图 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 服务端</a><ul class="double-li"><li><a title="Python 教程" href="//www.runoob.com/python3/python3-tutorial.html">Python 教程</a></li><li><a title="Python2.x 教程" href="//www.runoob.com/python/python-tutorial.html">Python2.x 教程</a></li><li><a title="Linux 教程" href="//www.runoob.com/linux/linux-tutorial.html">Linux 教程</a></li><li><a title="Docker 教程" href="//www.runoob.com/docker/docker-tutorial.html">Docker 教程</a></li><li><a title="Ruby 教程" href="//www.runoob.com/ruby/ruby-tutorial.html">Ruby 教程</a></li><li><a title="Java 教程" href="//www.runoob.com/java/java-tutorial.html">Java 教程</a></li><li><a title="C 教程" href="//www.runoob.com/c/c-tutorial.html">C 教程</a></li><li><a title="C++ 教程" href="//www.runoob.com/cplusplus/cpp-tutorial.html">C++ 教程</a></li><li><a title="Perl 教程" href="//www.runoob.com/perl/perl-tutorial.html">Perl 教程</a></li><li><a title="Servlet 教程" href="//www.runoob.com/servlet/servlet-tutorial.html">Servlet 教程</a></li><li><a title="JSP 教程" href="//www.runoob.com/jsp/jsp-tutorial.html">JSP 教程</a></li><li><a title="Lua 教程" href="//www.runoob.com/lua/lua-tutorial.html">Lua 教程</a></li><li><a title="Rust 教程" href="//www.runoob.com/rust/rust-tutorial.html">Rust 教程</a></li><li><a title="Scala 教程" href="//www.runoob.com/scala/scala-tutorial.html">Scala 教程</a></li><li><a title="Go 教程" href="//www.runoob.com/go/go-tutorial.html">Go 教程</a></li><li><a title="PHP 教程" href="//www.runoob.com/php/php-tutorial.html">PHP 教程</a></li><li><a title="Django 教程" href="//www.runoob.com/django/django-tutorial.html">Django 教程</a></li><li><a title="Zookeeper 教程" href="//www.runoob.com/w3cnote/zookeeper-tutorial.html">Zookeeper 教程</a></li><li><a title="设计模式" href="//www.runoob.com/design-pattern/design-pattern-tutorial.html">设计模式</a></li><li><a title="正则表达式" href="//www.runoob.com/regexp/regexp-tutorial.html">正则表达式</a></li><li><a title="Maven 教程" href="//www.runoob.com/maven/maven-tutorial.html">Maven 教程</a></li><li><a title="Verilog 教程" href="//www.runoob.com/w3cnote/verilog-tutorial.html">Verilog 教程</a></li><li><a title="ASP 教程" href="//www.runoob.com/asp/asp-tutorial.html">ASP 教程</a></li><li><a title="AppML 教程" href="//www.runoob.com/appml/appml-tutorial.html">AppML 教程</a></li><li><a title="VBScript 教程" href="//www.runoob.com/vbscript/vbscript-tutorial.html">VBScript 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 数据库</a><ul class="double-li"><li><a title="SQL 教程" href="//www.runoob.com/sql/sql-tutorial.html">SQL 教程</a></li><li><a title="MySQL 教程" href="//www.runoob.com/mysql/mysql-tutorial.html">MySQL 教程</a></li><li><a title="PostgreSQL 教程" href="//www.runoob.com/postgresql/postgresql-tutorial.html">PostgreSQL 教程</a></li><li><a title="SQLite 教程" href="//www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程</a></li><li><a title="MongoDB 教程" href="//www.runoob.com/mongodb/mongodb-tutorial.html">MongoDB 教程</a></li><li><a title="Redis 教程" href="//www.runoob.com/redis/redis-tutorial.html">Redis 教程</a></li><li><a title="Memcached 教程" href="//www.runoob.com/Memcached/Memcached-tutorial.html">Memcached 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 数据分析</a><ul class="double-li"><li><a title="Python 教程" href="//www.runoob.com/python3/python3-tutorial.html">Python 教程</a></li><li><a title="NumPy 教程" href="//www.runoob.com/numpy/numpy-tutorial.html">NumPy 教程</a></li><li><a title="Pandas 教程" href="//www.runoob.com/pandas/pandas-tutorial.html">Pandas 教程</a></li><li><a title="Matplotlib 教程" href="//www.runoob.com/matplotlib/matplotlib-tutorial.html">Matplotlib 教程</a></li><li><a title="Scipy 教程" href="//www.runoob.com/scipy/scipy-tutorial.html">Scipy 教程</a></li><li><a title="R 教程" href="//www.runoob.com/r/r-tutorial.html">R 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 移动端</a><ul class="double-li"><li><a title="Android 教程" href="//www.runoob.com/w3cnote/android-tutorial-intro.html">Android 教程</a></li><li><a title="Swift 教程" href="//www.runoob.com/swift/swift-tutorial.html">Swift 教程</a></li><li><a title="jQuery Mobile 教程" href="//www.runoob.com/jquerymobile/jquerymobile-tutorial.html">jQuery Mobile 教程</a></li><li><a title="ionic 教程" href="//www.runoob.com/ionic/ionic-tutorial.html">ionic 教程</a></li><li><a title="Kotlin 教程" href="//www.runoob.com/kotlin/kotlin-tutorial.html">Kotlin 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> XML 教程</a><ul class="double-li"><li><a title="XML 教程" href="//www.runoob.com/xml/xml-tutorial.html">XML 教程</a></li><li><a title="DTD 教程" href="//www.runoob.com/dtd/dtd-tutorial.html">DTD 教程</a></li><li><a title="XML DOM 教程" href="//www.runoob.com/dom/dom-tutorial.html">XML DOM 教程</a></li><li><a title="XSLT 教程" href="//www.runoob.com/xsl/xsl-tutorial.html">XSLT 教程</a></li><li><a title="XPath 教程" href="//www.runoob.com/xpath/xpath-tutorial.html">XPath 教程</a></li><li><a title="XQuery 教程" href="//www.runoob.com/xquery/xquery-tutorial.html">XQuery 教程</a></li><li><a title="XLink 教程" href="//www.runoob.com/xlink/xlink-tutorial.html">XLink 教程</a></li><li><a title="XPointer 教程" href="//www.runoob.com/xlink/xlink-tutorial.html">XPointer 教程</a></li><li><a title="XML Schema 教程" href="//www.runoob.com/schema/schema-tutorial.html">XML Schema 教程</a></li><li><a title="XSL-FO 教程" href="//www.runoob.com/xslfo/xslfo-tutorial.html">XSL-FO 教程</a></li><li><a title="SVG 教程" href="//www.runoob.com/svg/svg-tutorial.html">SVG 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> ASP.NET</a><ul class="double-li"><li><a title="ASP.NET 教程" href="//www.runoob.com/aspnet/aspnet-tutorial.html">ASP.NET 教程</a></li><li><a title="C# 教程" href="//www.runoob.com/csharp/csharp-tutorial.html">C# 教程</a></li><li><a title="Web Pages 教程" href="//www.runoob.com/aspnet/webpages-intro.html">Web Pages 教程</a></li><li><a title="Razor 教程" href="//www.runoob.com/aspnet/razor-intro.html">Razor 教程</a></li><li><a title="MVC 教程" href="//www.runoob.com/aspnet/mvc-intro.html">MVC 教程</a></li><li><a title="Web Forms 教程" href="//www.runoob.com/aspnet/aspnet-intro.html">Web Forms 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> Web Service</a><ul class="double-li"><li><a title="Web Service 教程" href="//www.runoob.com/webservices/webservices-tutorial.html">Web Service 教程</a></li><li><a title="WSDL 教程" href="//www.runoob.com/wsdl/wsdl-tutorial.html">WSDL 教程</a></li><li><a title="SOAP 教程" href="//www.runoob.com/soap/soap-tutorial.html">SOAP 教程</a></li><li><a title="RSS 教程" href="//www.runoob.com/rss/rss-tutorial.html">RSS 教程</a></li><li><a title="RDF 教程" href="//www.runoob.com/rdf/rdf-tutorial.html">RDF 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 开发工具</a><ul class="double-li"><li><a title="Eclipse 教程" href="//www.runoob.com/eclipse/eclipse-tutorial.html">Eclipse 教程</a></li><li><a title="Git 教程" href="//www.runoob.com/git/git-tutorial.html">Git 教程</a></li><li><a title="Svn 教程" href="//www.runoob.com/svn/svn-tutorial.html">Svn 教程</a></li><li><a title="Markdown 教程" href="//www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 网站建设</a><ul class="double-li"><li><a title="HTTP 教程" href="//www.runoob.com/http/http-tutorial.html">HTTP 教程</a></li><li><a title="网站建设指南" href="//www.runoob.com/web/web-buildingprimer.html">网站建设指南</a></li><li><a title="浏览器信息" href="//www.runoob.com/browsers/browser-information.html">浏览器信息</a></li><li><a title="网站主机教程" href="//www.runoob.com/hosting/hosting-tutorial.html">网站主机教程</a></li><li><a title="TCP/IP 教程" href="//www.runoob.com/tcpip/tcpip-tutorial.html">TCP/IP 教程</a></li><li><a title="W3C 教程" href="//www.runoob.com/w3c/w3c-tutorial.html">W3C 教程</a></li><li><a title="网站品质" href="//www.runoob.com/quality/quality-tutorial.html">网站品质</a></li></ul></li></ul>			</div>
-	
-	</div>
-	</div>
-	<br>
-	
-	<div class="sidebar-box re-box re-box-large">
-		<div class="sidebar-box recommend-here">
-			<a href="javascript:void(0);">Advertisement</a>
-		</div>
-		<div class="re-600160" id="sidebar-right-re">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- 侧栏1 -->
-		<ins class="adsbygoogle"
-		     style="display:inline-block;width:160px;height:600px"
-		     data-ad-client="ca-pub-5751451760833794"
-		     data-ad-slot="4106274865"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-				</div>
-	</div>
-</div></div>
-
-</div>
-
-<script>
-var aid = 4621;
-function coll() {
-	$.post( '/wp-content/themes/runoob/option/user/userinfo.php', {aid:aid, action:"collarticle", opt:'add'},function( data ) {
-		if(data.error==0) {
-			$("#content").find("h1:first").find("a").attr("href","javascript:void(0);");
-			$("#content").find("h1:first").find("img").attr("src","http://www.runoob.com/wp-content/themes/runoob/assets/img/coll2.png").css({width:32+"px",height:32+"px"});
-		}
-		alert(data.msg);
-	},'json');
-}
-</script>
-
-
-<!-- 反馈对话框开始 -->
-<script src="/wp-content/themes/runoob/assets/feedback/stable/2.0/feedback.js?1.0"></script>
-<link rel="stylesheet" href="/wp-content/themes/runoob/assets/feedback/stable/2.0/feedback.css?1.0" />
-<script type="text/javascript">
-$.feedback({
-    ajaxURL: '/feedback/runoob_feedback.php',
-	html2canvasURL: '/wp-content/themes/runoob/assets/feedback/stable/2.0/html2canvas.js',
-	onClose: function () {
-         window.location.reload();
-    }
-});
-</script>
-<!-- 反馈对话框结束 -->
-<button class="feedback-btn feedback-btn-gray">反馈/建议</button>
-<!-- 底部 -->
-<div id="footer" class="mar-t50">
-   <div class="runoob-block">
-    <div class="runoob cf">
-     <dl>
-      <dt>
-       在线实例
-      </dt>
-      <dd>
-       &middot;<a target="_blank" href="/html/html-examples.html">HTML 实例</a>
-      </dd>
-      <dd>
-       &middot;<a target="_blank" href="/css/css-examples.html">CSS 实例</a>
-      </dd>
-      <dd>
-       &middot;<a target="_blank" href="/js/js-examples.html">JavaScript 实例</a>
-      </dd>
-      <dd>
-       &middot;<a target="_blank" href="/ajx/ajax-examples.html">Ajax 实例</a>
-      </dd>
-       <dd>
-       &middot;<a target="_blank" href="/jquery/jquery-examples.html">jQuery 实例</a>
-      </dd>
-      <dd>
-       &middot;<a target="_blank" href="/xml/xml-examples.html">XML 实例</a>
-      </dd>
-      <dd>
-       &middot;<a target="_blank" href="/java/java-examples.html">Java 实例</a>
-      </dd>
-     
-     </dl>
-     <dl>
-      <dt>
-      字符集&工具
-      </dt>
-      <dd>
-       &middot; <a target="_blank" href="/charsets/html-charsets.html">HTML 字符集设置</a>
-      </dd>
-      <dd>
-       &middot; <a target="_blank" href="/tags/html-ascii.html">HTML ASCII 字符集</a>
-      </dd>
-     <dd>
-       &middot; <a target="_blank" href="/tags/ref-entities.html">HTML ISO-8859-1</a>
-      </dd> 
-      <dd>
-       &middot; <a target="_blank" href="/tags/html-symbols.html">HTML 实体符号</a>
-      </dd>
-      <dd>
-       &middot; <a target="_blank" href="/tags/html-colorpicker.html">HTML 拾色器</a>
-      </dd>
-      <dd>
-       &middot; <a target="_blank" href="//c.runoob.com/front-end/53">JSON 格式化工具</a>
-      </dd>
-     </dl>
-     <dl>
-      <dt>
-       最新更新
-      </dt>
-                   <dd>
-       &middot;
-      <a href="http://www.runoob.com/cssref/css-pr-grid.html" title="css grid 属性">css grid 属性</a>
-      </dd>
-              <dd>
-       &middot;
-      <a href="http://www.runoob.com/jsref/prop-element-scrollheight.html" title="HTML DOM scrollHeight 属性">HTML DOM scroll...</a>
-      </dd>
-              <dd>
-       &middot;
-      <a href="http://www.runoob.com/w3cnote/js-sort-table.html" title="JavaScript/CSS 表格排序功能">JavaScript/CSS ...</a>
-      </dd>
-              <dd>
-       &middot;
-      <a href="http://www.runoob.com/w3cnote/js-sort-list.html" title="JavaScript/CSS 列表排序功能">JavaScript/CSS ...</a>
-      </dd>
-              <dd>
-       &middot;
-      <a href="http://www.runoob.com/w3cnote/js-filter-dropdown.html" title="JavaScript/CSS 下拉菜单搜索功能">JavaScript/CSS ...</a>
-      </dd>
-              <dd>
-       &middot;
-      <a href="http://www.runoob.com/w3cnote/js-filter-table.html" title="JavaScript/CSS 表格搜索功能">JavaScript/CSS ...</a>
-      </dd>
-              <dd>
-       &middot;
-      <a href="http://www.runoob.com/w3cnote/js-filter-lists.html" title="JavaScript/CSS 列表搜索功能">JavaScript/CSS ...</a>
-      </dd>
-             </dl>
-     <dl>
-      <dt>
-       站点信息
-      </dt>
-      <dd>
-       &middot;
-       <a target="_blank" href="//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" rel="external nofollow">意见反馈</a>
-       </dd>
-      <dd>
-       &middot;
-      <a target="_blank" href="/disclaimer">免责声明</a>
-       </dd>
-      <dd>
-       &middot;
-       <a target="_blank" href="/aboutus">关于我们</a>
-       </dd>
-      <dd>
-       &middot;
-      <a target="_blank" href="/archives">文章归档</a>
-      </dd>
+    <span id="uhf-navspn-shellmenu_8-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c8c2c1c9c3c1m1r1a1"}'>软件</span>
+    <button id="uhf-navbtn-shellmenu_8-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c8c2c1c9c3c1m1r1a1","sN":2,"aN":"c8c2c1c9c3c1m1r1a1"}'>软件</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Software_WindowsApps_cont","cT":"Container","id":"c3c8c2c1c9c3c1m1r1a1","sN":3,"aN":"c8c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_9" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/store/apps/windows?icid=CNavAppsWindowsApps" data-m='{"cN":"GlobalNav_More_Software_WindowsApps_nav","id":"n1c3c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c8c2c1c9c3c1m1r1a1"}'>Windows 应用</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Software_OneDrive_cont","cT":"Container","id":"c4c8c2c1c9c3c1m1r1a1","sN":4,"aN":"c8c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_10" class="js-subm-uhf-nav-link" href="https://onedrive.live.com/about/zh-CN/" data-m='{"cN":"GlobalNav_More_Software_OneDrive_nav","id":"n1c4c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c8c2c1c9c3c1m1r1a1"}'>OneDrive</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Software_Outlook_cont","cT":"Container","id":"c5c8c2c1c9c3c1m1r1a1","sN":5,"aN":"c8c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_11" class="js-subm-uhf-nav-link" href="https://outlook.live.com/owa/" data-m='{"cN":"GlobalNav_More_Software_Outlook_nav","id":"n1c5c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c5c8c2c1c9c3c1m1r1a1"}'>Outlook</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Software_Skype_cont","cT":"Container","id":"c6c8c2c1c9c3c1m1r1a1","sN":6,"aN":"c8c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_12" class="js-subm-uhf-nav-link" href="https://www.skype.com/zh-Hans/" data-m='{"cN":"GlobalNav_More_Software_Skype_nav","id":"n1c6c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c6c8c2c1c9c3c1m1r1a1"}'>Skype</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Software_OneNote_cont","cT":"Container","id":"c7c8c2c1c9c3c1m1r1a1","sN":7,"aN":"c8c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_13" class="js-subm-uhf-nav-link" href="https://www.onenote.com/?omkt=zh-CN" data-m='{"cN":"GlobalNav_More_Software_OneNote_nav","id":"n1c7c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c7c8c2c1c9c3c1m1r1a1"}'>OneNote</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Software_Microsoft Teams_cont","cT":"Container","id":"c8c8c2c1c9c3c1m1r1a1","sN":8,"aN":"c8c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_14" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/microsoft-teams/group-chat-software" data-m='{"cN":"GlobalNav_More_Software_Microsoft Teams_nav","id":"n1c8c8c2c1c9c3c1m1r1a1","sN":1,"aN":"c8c8c2c1c9c3c1m1r1a1"}'>Microsoft Teams</a>
+            
+        </li>
+    </ul>
     
-     </dl>
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cN":"PCsAndDevices_cont","cT":"Container","id":"c9c2c1c9c3c1m1r1a1","sN":9,"aN":"c2c1c9c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_15-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"cN":"GlobalNav_PCsAndDevices_nonnav","id":"nn1c9c2c1c9c3c1m1r1a1","sN":1,"aN":"c9c2c1c9c3c1m1r1a1"}'>PC 和设备</span>
+    <button id="uhf-navbtn-shellmenu_15-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"cN":"GlobalNav_PCsAndDevices_nonnav","id":"nn2c9c2c1c9c3c1m1r1a1","sN":2,"aN":"c9c2c1c9c3c1m1r1a1"}'>PC 和设备</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_PCAndDevices_ShopXbox_cont","cT":"Container","id":"c3c9c2c1c9c3c1m1r1a1","sN":3,"aN":"c9c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_16" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/store/b/xbox?icid=CNavDevicesXbox" data-m='{"cN":"GlobalNav_More_PCAndDevices_ShopXbox_nav","id":"n1c3c9c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c9c2c1c9c3c1m1r1a1"}'>购买 Xbox</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_PCsAndDevices_PCsAndTablets_cont","cT":"Container","id":"c4c9c2c1c9c3c1m1r1a1","sN":4,"aN":"c9c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_17" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/windows/devices" data-m='{"cN":"GlobalNav_More_PCsAndDevices_PCsAndTablets_nav","id":"n1c4c9c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c9c2c1c9c3c1m1r1a1"}'>PC 和平板电脑</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_PCAndDevices_Accessories_cont","cT":"Container","id":"c5c9c2c1c9c3c1m1r1a1","sN":5,"aN":"c9c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_18" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/accessories/zh-cn" data-m='{"cN":"GlobalNav_More_PCAndDevices_Accessories_nav","id":"n1c5c9c2c1c9c3c1m1r1a1","sN":1,"aN":"c5c9c2c1c9c3c1m1r1a1"}'>配件</a>
+            
+        </li>
+    </ul>
     
-     <div class="search-share">
-      <div class="app-download">
-        <div>
-         <strong>关注微信</strong>
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c10c2c1c9c3c1m1r1a1","sN":10,"aN":"c2c1c9c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_19-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c10c2c1c9c3c1m1r1a1","sN":1,"aN":"c10c2c1c9c3c1m1r1a1"}'>娱乐</span>
+    <button id="uhf-navbtn-shellmenu_19-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c10c2c1c9c3c1m1r1a1","sN":2,"aN":"c10c2c1c9c3c1m1r1a1"}'>娱乐</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"Products_DevicesAndXbox_XboxAndGames_cont","cT":"Container","id":"c3c10c2c1c9c3c1m1r1a1","sN":3,"aN":"c10c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_20" class="js-subm-uhf-nav-link" href="https://www.xbox.com/zh-cn/games/xbox-one?xr=shellnav" data-m='{"cN":"GlobalNav_Products_DevicesAndXbox_XboxAndGames_nav","id":"n1c3c10c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c10c2c1c9c3c1m1r1a1"}'>Xbox 与游戏</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Entertainment_PCGames_cont","cT":"Container","id":"c4c10c2c1c9c3c1m1r1a1","sN":4,"aN":"c10c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_21" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/store/games/windows?icid=CNavGamesWindowsGames" data-m='{"cN":"GlobalNav_Entertainment_PCGames_nav","id":"n1c4c10c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c10c2c1c9c3c1m1r1a1"}'>PC 游戏</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c11c2c1c9c3c1m1r1a1","sN":11,"aN":"c2c1c9c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_22-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c11c2c1c9c3c1m1r1a1"}'>企业版</span>
+    <button id="uhf-navbtn-shellmenu_22-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c11c2c1c9c3c1m1r1a1","sN":2,"aN":"c11c2c1c9c3c1m1r1a1"}'>企业版</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Business_Microsoft_Cloud_cont","cT":"Container","id":"c3c11c2c1c9c3c1m1r1a1","sN":3,"aN":"c11c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_23" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/microsoft-cloud" data-m='{"cN":"GlobalNav_More_Business_Microsoft_Cloud_nav","id":"n1c3c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c11c2c1c9c3c1m1r1a1"}'>Microsoft Cloud</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Business_MicrosoftAzure_cont","cT":"Container","id":"c4c11c2c1c9c3c1m1r1a1","sN":4,"aN":"c11c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_24" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/china/azure/" data-m='{"cN":"GlobalNav_More_Business_MicrosoftAzure_nav","id":"n1c4c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c11c2c1c9c3c1m1r1a1"}'>Microsoft Azure</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Business_Microsoft365_cont","cT":"Container","id":"c5c11c2c1c9c3c1m1r1a1","sN":5,"aN":"c11c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_25" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/microsoft-365/business/all-business" data-m='{"cN":"GlobalNav_Business_Microsoft365_nav","id":"n1c5c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c5c11c2c1c9c3c1m1r1a1"}'>Microsoft 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Business_Windows365_cont","cT":"Container","id":"c6c11c2c1c9c3c1m1r1a1","sN":6,"aN":"c11c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_26" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/windows-365" data-m='{"cN":"GlobalNav_More_Business_Windows365_nav","id":"n1c6c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c6c11c2c1c9c3c1m1r1a1"}'>Windows 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Business_Enterprise_cont","cT":"Container","id":"c7c11c2c1c9c3c1m1r1a1","sN":7,"aN":"c11c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_27" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/enterprise" data-m='{"cN":"GlobalNav_More_Business_Enterprise_nav","id":"n1c7c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c7c11c2c1c9c3c1m1r1a1"}'>Microsoft Industry</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Business_ShopBusiness_cont","cT":"Container","id":"c8c11c2c1c9c3c1m1r1a1","sN":8,"aN":"c11c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_28" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/store/b/business?icid=CNavBusinessStore" data-m='{"cN":"GlobalNav_More_Business_ShopBusiness_nav","id":"n1c8c11c2c1c9c3c1m1r1a1","sN":1,"aN":"c8c11c2c1c9c3c1m1r1a1"}'>购买商业版</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c12c2c1c9c3c1m1r1a1","sN":12,"aN":"c2c1c9c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_29-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c12c2c1c9c3c1m1r1a1"}'>开发人员与 IT</span>
+    <button id="uhf-navbtn-shellmenu_29-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c12c2c1c9c3c1m1r1a1","sN":2,"aN":"c12c2c1c9c3c1m1r1a1"}'>开发人员与 IT</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_.Net_cont","cT":"Container","id":"c3c12c2c1c9c3c1m1r1a1","sN":3,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_30" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/net/" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_.Net_nav","id":"n1c3c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c12c2c1c9c3c1m1r1a1"}'>.NET</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DevelopersAndIT_VisualStudio_cont","cT":"Container","id":"c4c12c2c1c9c3c1m1r1a1","sN":4,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_31" class="js-subm-uhf-nav-link" href="https://visualstudio.microsoft.com/" data-m='{"cN":"GlobalNav_More_DevelopersAndIT_VisualStudio_nav","id":"n1c4c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c12c2c1c9c3c1m1r1a1"}'>Visual Studio</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_ProductsandServices_WindowsServer_cont","cT":"Container","id":"c5c12c2c1c9c3c1m1r1a1","sN":5,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_32" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/cloud-platform/windows-server" data-m='{"cN":"GlobalNav_More_ProductsandServices_WindowsServer_nav","id":"n1c5c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c5c12c2c1c9c3c1m1r1a1"}'>Windows Server</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_WindowsDevCenter_cont","cT":"Container","id":"c6c12c2c1c9c3c1m1r1a1","sN":6,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_33" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/zh-cn/windows" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_WindowsDevCenter_nav","id":"n1c6c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c6c12c2c1c9c3c1m1r1a1"}'>开发 Windows 应用</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_Docs.microsoft.com_cont","cT":"Container","id":"c7c12c2c1c9c3c1m1r1a1","sN":7,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_34" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/zh-cn/" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_Docs.microsoft.com_nav","id":"n1c7c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c7c12c2c1c9c3c1m1r1a1"}'>文档</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_Power Platform_cont","cT":"Container","id":"c8c12c2c1c9c3c1m1r1a1","sN":8,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_35" class="js-subm-uhf-nav-link" href="https://powerplatform.microsoft.com/zh-cn" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_Power Platform_nav","id":"n1c8c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c8c12c2c1c9c3c1m1r1a1"}'>Power Platform</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_PowerApps_cont","cT":"Container","id":"c9c12c2c1c9c3c1m1r1a1","sN":9,"aN":"c12c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_36" class="js-subm-uhf-nav-link" href="https://powerapps.microsoft.com/zh-cn" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_PowerApps_nav","id":"n1c9c12c2c1c9c3c1m1r1a1","sN":1,"aN":"c9c12c2c1c9c3c1m1r1a1"}'>Power Apps</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c13c2c1c9c3c1m1r1a1","sN":13,"aN":"c2c1c9c3c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_37-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c13c2c1c9c3c1m1r1a1","sN":1,"aN":"c13c2c1c9c3c1m1r1a1"}'>其他</span>
+    <button id="uhf-navbtn-shellmenu_37-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c13c2c1c9c3c1m1r1a1","sN":2,"aN":"c13c2c1c9c3c1m1r1a1"}'>其他</button>
+    <ul aria-hidden="true">
+        <li class="js-nav-menu single-link" data-m='{"cN":"Products_SoftwareAndServices_FreeDownloadsAndSecurity_cont","cT":"Container","id":"c3c13c2c1c9c3c1m1r1a1","sN":3,"aN":"c13c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_38" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/download/default.aspx" data-m='{"cN":"GlobalNav_Products_SoftwareAndServices_FreeDownloadsAndSecurity_nav","id":"n1c3c13c2c1c9c3c1m1r1a1","sN":1,"aN":"c3c13c2c1c9c3c1m1r1a1"}'>免费下载与安全性</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Products_ForStudentsAndEducators_Education_cont","cT":"Container","id":"c4c13c2c1c9c3c1m1r1a1","sN":4,"aN":"c13c2c1c9c3c1m1r1a1"}'>
+            <a id="shellmenu_39" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/zh-cn/education?icid=CNavMSCOML0_Studentsandeducation" data-m='{"cN":"GlobalNav_Products_ForStudentsAndEducators_Education_nav","id":"n1c4c13c2c1c9c3c1m1r1a1","sN":1,"aN":"c4c13c2c1c9c3c1m1r1a1"}'>教育</a>
+            
+        </li>
+    </ul>
+    
+</li>
+                                                            <li class="f-multi-column-info">
+                                    <a data-m='{"id":"n14c2c1c9c3c1m1r1a1","sN":14,"aN":"c2c1c9c3c1m1r1a1"}' href="https://www.microsoft.com/zh-cn/sitemap.aspx" aria-label="" class="c-glyph">查看站点地图</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+</div>
+                            <form class="c-search" autocomplete="off" id="searchForm" name="searchForm" role="search" action="https://www.microsoft.com/zh-cn/search/result.aspx" method="GET" data-seAutoSuggest='{"queryParams":{"market":"zh-cn","clientId":"7F27B536-CF6B-4C65-8638-A0F8CBDFCA65","sources":"Iris-Products,DCatAll-Products,Microsoft-Terms","filter":"ExcludeDCatProducts:DCatDevices-Products,DCatSoftware-Products,DCatBundles-Products+ClientType:StoreWeb","counts":"1,5,5"},"familyNames":{"Apps":"应用","Books":"书籍","Bundles":"套装","Devices":"设备","Fees":"Fee","Games":"游戏","MusicAlbums":"专辑","MusicTracks":"歌曲","MusicVideos":"视频","MusicArtists":"艺术家","OperatingSystem":"操作系统","Software":"软件","Movies":"电影","TV":"电视","CSV":"礼品卡","VideoActor":"演员"}}' data-seautosuggestapi="https://www.microsoft.com/services/api/v3/suggest" data-m='{"cN":"GlobalNav_Search_cont","cT":"Container","id":"c3c1c9c3c1m1r1a1","sN":3,"aN":"c1c9c3c1m1r1a1"}' aria-expanded="false">
+                                <input  id="cli_shellHeaderSearchInput" aria-label="已展开搜索" aria-autocomplete="list" aria-controls="universal-header-search-auto-suggest-transparent" aria-owns="universal-header-search-auto-suggest-ul" type="search" name="q" role="text" placeholder="在 Microsoft.com 中搜索" data-m='{"cN":"SearchBox_nav","id":"n1c3c1c9c3c1m1r1a1","sN":1,"aN":"c3c1c9c3c1m1r1a1"}' data-toggle="tooltip" data-placement="right" title="在 Microsoft.com 中搜索" />
+                                    <input type="hidden" name="form" value="MSHOME" data-m='{"cN":"HiddenInput_nav","id":"n2c3c1c9c3c1m1r1a1","sN":2,"aN":"c3c1c9c3c1m1r1a1"}' />
+                                    <button id="search" aria-label="在 Microsoft.com 中搜索" class="c-glyph" data-m='{"cN":"Search_nav","id":"n3c3c1c9c3c1m1r1a1","sN":3,"aN":"c3c1c9c3c1m1r1a1"}' data-bi-dnt="true" data-bi-mto="true" aria-expanded="false">
+                                        <span role="presentation">搜索</span>
+                                        <span role="tooltip" class="c-uhf-tooltip c-uhf-search-tooltip">在 Microsoft.com 中搜索</span>
+                                    </button>
+                                <div class="m-auto-suggest" id="universal-header-search-auto-suggest-transparent" role="group">
+                                    <ul class="c-menu" id="universal-header-search-auto-suggest-ul" aria-label="搜索建议" aria-hidden="true" data-bi-dnt="true" data-bi-mto="true" data-js-auto-suggest-position="default" role="listbox" data-tel="jsll" data-m='{"cN":"search suggestions_cont","cT":"Container","id":"c4c3c1c9c3c1m1r1a1","sN":4,"aN":"c3c1c9c3c1m1r1a1"}'></ul>
+                                </div>
+                                
+                            </form>
+                        <button data-m='{"cN":"cancel-search","pid":"取消 搜索","id":"nn4c1c9c3c1m1r1a1","sN":4,"aN":"c1c9c3c1m1r1a1"}' id="cancel-search" class="cancel-search" aria-label="取消 搜索">
+                            <span>取消</span>
+                        </button>
+                    <a id="uhf-shopping-cart"
+                       aria-label="0 购物车中的物品"
+                       class="c-action-trigger c-glyph c-uhf-nav-link glyph-shopping-cart"
+                       href="//www.microsoftstore.com.cn/cart"
+                       data-src-dmn-chk="true"
+                       data-m='{"cN":"GlobalNav_Cart_nav","bhvr":82,"id":"n5c1c9c3c1m1r1a1","sN":5,"aN":"c1c9c3c1m1r1a1"}'>
+                        <span class="shopping-cart-amount x-hidden" aria-hidden="true">0</span>
+                        <span class="c-cart-lbl c-st-lbl">购物车</span>
+                        <span id="uhf-shopping-cart-tooltip" class="c-uhf-tooltip" role="tooltip">0 购物车中的物品</span>
+                    </a>
+                            <iframe id="shell-cart-count" data-src="//www.microsoftstore.com.cn/cart"></iframe>
+                        <div id="meControl" class="c-me"  data-signinsettings='{"containerId":"meControl","enabled":true,"headerHeight":48,"debug":false,"extensibleLinks":[],"userData":{"idp":"msa","firstName":"","lastName":"","memberName":"","cid":"","authenticatedState":"3"},"rpData":{"preferredIdp":"msa","msaInfo":{"signInUrl":"/zh-cn/store/signin","signOutUrl":"/zh-cn/store/signout","meUrl":"https://login.live.com/me.srf?wa=wsignin1.0"},"aadInfo":{"signOutUrl":"/zh-cn/store/signout","appId":"","siteUrl":"","blockMsaFed":true}}}' data-m='{"cN":"GlobalNav_Account_cont","cT":"Container","id":"c6c1c9c3c1m1r1a1","sN":6,"aN":"c1c9c3c1m1r1a1"}'>
+                            <div class="msame_Header">
+                                <div class="msame_Header_name st_msame_placeholder">登录</div>
+                            </div>
+                            
+                        </div>
+                
+            </div>
         </div>
-      </div>
-      <div class="share">
-      <img width="128" height="128" src="/wp-content/themes/runoob/assets/images/qrcode.png" />
-       </div>
-     </div>
-     
+        
+        
     </div>
-   </div>
-   <div class="w-1000 copyright">
-     Copyright &copy; 2013-2021    <strong><a href="//www.runoob.com/" target="_blank">菜鸟教程</a></strong>&nbsp;
-    <strong><a href="//www.runoob.com/" target="_blank">runoob.com</a></strong> All Rights Reserved. 备案号：<a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn/">闽ICP备15012807号-1</a>
-   </div>
-  </div>
-  <div class="fixed-btn">
-    <a class="go-top" href="javascript:void(0)" title="返回顶部"> <i class="fa fa-angle-up"></i></a>
-    <a class="qrcode"  href="javascript:void(0)" title="关注我们"><i class="fa fa-qrcode"></i></a>
-    <a class="writer" style="display:none" href="javascript:void(0)"   title="标记/收藏"><i class="fa fa-star" aria-hidden="true"></i></a>
-    <!-- qrcode modal -->
-    <div id="bottom-qrcode" class="modal panel-modal hide fade in">
-      <h4>微信关注</h4>
-      <div class="panel-body"><img alt="微信关注" width="128" height="128" src="/wp-content/themes/runoob/assets/images/qrcode.png"></div> 
+    
+</header>
+
+
+
+
     </div>
-  </div>
+        </div>
 
- <div style="display:none;">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84264393-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    </div>
+    <div class="">
+        <main role="main" class="pt-5" id="primaryArea">
+            
+            
 
-  gtag('config', 'UA-84264393-2');
-</script>
+
+    <div class="hubmain windows">
+                        <div data-grid="container">
+                            
+<div data-grid="container" class="m-in-page-navigation sticky-in-page-nav home-stickynav">
+    <div data-js-in-page-navigation-wrapper="true">
+        <nav class="c-in-page-navigation">
+            <ul>
+                        <li class="nav-1">
+                            <img src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJb6L' alt='Microsoft Windows 徽标' class='mscom-image c-image'/>
+                        </li>
+                        <li class="nav-2">
+                            <a href="https://www.microsoft.com/zh-cn/windows/windows-11" class="" aria-label="了解有关 Windows 11 的详细信息"><span>了解 WINDOWS&nbsp;11</span></a>
+                        </li>
+            </ul>
+        </nav>
+        <nav class="c-in-page-navigation f-dropdown f-hide">
+            <div data-grid="container" class="f-dropdown-menu">
+                <a role="button" aria-haspopup="true" aria-expanded="false" class="f-dropdown-link"><img src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJb6L' alt='Microsoft Windows 徽标' class='mscom-image c-image'/></a>
+                <ul id="unique-id-for-list" role="menu" class="c-menu" aria-hidden="true" data-grid="container">
+
+                            <li class="c-menu-item nav-1" role="presentation">
+                                <img src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJb6L' alt='Microsoft Windows 徽标' class='mscom-image c-image'/>
+                            </li>
+                            <li class="c-menu-item nav-2" role="presentation">
+                                <a href="https://www.microsoft.com/zh-cn/windows/windows-11" class="" aria-label="了解有关 Windows 11 的详细信息" role="menuitem" aria-setsize="2" aria-posinset="2"><span>了解 WINDOWS&nbsp;11</span></a>
+                            </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </div>
-<script>
-window.jsui={
-    www: 'https://www.runoob.com',
-    uri: 'https://www.runoob.com/wp-content/themes/runoob'
-};
-</script>
-<style>
-ol,ul{list-style:none}.cd-switcher a{text-decoration:none;outline:0}.cd-switcher a:hover{text-decoration:underline}a:focus{outline:0;-moz-outline:0}.main_nav{width:300px;height:60px;margin:60px auto 10px auto}.main_nav li{float:left;width:60px;margin-right:10px;font-size:16px;padding:.6em 1em;border-radius:3em;background:#2f889a;text-align:center}.main_nav li a{color:#fff}.errtip{background-color:#fceaea;color:#db5353;padding:8px 15px;font-size:14px;border:1px solid #fc9797;border-radius:5px}.cd-user-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(52,54,66,0.9);z-index:3;overflow-y:auto;cursor:pointer;visibility:hidden;opacity:0;-webkit-transition:opacity .3s 0,visibility 0 .3s;-moz-transition:opacity .3s 0,visibility 0 .3s;transition:opacity .3s 0,visibility 0 .3s}.cd-user-modal.is-visible{visibility:visible;opacity:1;-webkit-transition:opacity .3s 0,visibility 0 0;-moz-transition:opacity .3s 0,visibility 0 0;transition:opacity .3s 0,visibility 0 0}.cd-user-modal.is-visible .cd-user-modal-container{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}.cd-user-modal-container{position:relative;width:90%;max-width:500px;background:#FFF;margin:3em auto 4em;cursor:auto;border-radius:.25em;-webkit-transform:translateY(-30px);-moz-transform:translateY(-30px);-ms-transform:translateY(-30px);-o-transform:translateY(-30px);transform:translateY(-30px);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;transition-property:transform;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;transition-duration:.3s}.cd-user-modal-container .cd-switcher:after{content:"";display:table;clear:both}.cd-user-modal-container .cd-switcher li{width:50%;float:left;text-align:center}.cd-user-modal-container .cd-switcher li:first-child a{border-radius:.25em 0 0 0}.cd-user-modal-container .cd-switcher li:last-child a{border-radius:0 .25em 0 0}.cd-user-modal-container .cd-switcher a{font-size:1.2em;font-weight:bold;display:block;width:100%;height:50px;line-height:50px;background:#e8f1e2;color:#96b880}.cd-user-modal-container .cd-switcher a.selected{background:#FFF;color:#505260}@media only screen and (min-width:600px){.cd-user-modal-container{margin:4em auto}.cd-user-modal-container .cd-switcher a{height:70px;line-height:70px}}.cd-form{padding:1.4em}.cd-form .fieldset{position:relative;margin:1.4em 0}.cd-form .fieldset:first-child{margin-top:0}.cd-form .fieldset:last-child{margin-bottom:0}.cd-form label{font-size:16px;font-size:.875rem}.cd-form label.image-replace{display:inline-block;position:absolute;left:15px;top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);height:20px;width:20px;overflow:hidden;text-indent:100%;white-space:nowrap;color:transparent;text-shadow:none;background-repeat:no-repeat;background-position:50% 0}.cd-form label.cd-username{background-image:url("/wp-content/themes/runoob/assets/img/cd-icon-username.svg")}.cd-form label.cd-email{background-image:url("/wp-content/themes/runoob/assets/img/cd-icon-email.svg")}.cd-form label.cd-password{background-image:url("/wp-content/themes/runoob/assets/img/cd-icon-password.svg")}.cd-form input{margin:0;padding:0;border-radius:.25em}.cd-form input.full-width{width:80%}.cd-form input.full-width2{width:94%}.cd-form input.has-padding{padding:12px 20px 12px 50px}.cd-form input.has-border{border:1px solid #d2d8d8;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}.cd-form input.has-border:focus{border-color:#98b880;box-shadow:0 0 5px rgba(52,54,66,0.1);outline:0}.cd-form input.has-error{border:1px solid #d76666}.cd-form input[type=password]{padding-right:65px}.cd-form input[type=submit]{padding:16px 0;cursor:pointer;background:#96b97d;color:#FFF;font-weight:bold;border:0;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-size:1.2em;font-weight:bold}.no-touch .cd-form input[type=submit]:hover,.no-touch .cd-form input[type=submit]:focus{background:#3599ae;outline:0}@media only screen and (min-width:600px){.cd-form{padding:2em}.cd-form .fieldset{margin:2em 0}.cd-form .fieldset:first-child{margin-top:0}.cd-form .fieldset:last-child{margin-bottom:0}.cd-form input.has-padding{padding:16px 20px 16px 50px}.cd-form input[type=submit]{padding:16px 0}}.cd-close-form{display:block;position:absolute;width:40px;height:40px;right:0;top:-40px;background:url("/wp-content/themes/runoob/assets/img/cd-icon-close.svg") no-repeat center center;text-indent:100%;white-space:nowrap;overflow:hidden}@media only screen and (min-width:1170px){}#cd-login,#cd-signup,#cd-reset-password{display:none}#cd-login.is-selected,#cd-signup.is-selected,#cd-reset-password.is-selected{display:block}
-</style>
-<div class="cd-user-modal"> 
-	<div class="cd-user-modal-container">
-		<ul class="cd-switcher">
-			<li><a href="javascript:;">用户登录</a></li>
-			<li><a href="javascript:;">注册新用户</a></li>
-		</ul>
+                        </div>
+<section id="homepage-hero">
+    <div class="animation-container animation-in-higher-vp">
+        <div class="heading-container">
 
-		<div id="cd-login"> <!-- 登录表单 -->
-			<div class="cd-form">
-				<p class="fieldset">
-					<label class="image-replace cd-username" for="signin-username">用户名</label>
-					<input class="full-width has-padding has-border" id="signin-username" name=username type="text" placeholder="输入用户名">
-				</p>
+            <h2 class="c-heading-2 f-lean">全新推出 Windows&nbsp;11</h2>            <p class="c-paragraph-1">与你所爱，更近一步。</p>                    </div>
+        <div class="video-container">
 
-				<p class="fieldset">
-					<label class="image-replace cd-password" for="signin-password">密码</label>
-					<input class="full-width has-padding has-border" id="signin-password" name="password" type="password"  placeholder="输入密码">
-				</p>
-				
-				<p class="fieldset">
-					<input type="checkbox" id="remember-me" checked>
-					<label for="remember-me">记住登录状态</label>
-          <a href="//www.runoob.com/reset-password" style="float: right;padding-right: 20px;" target="_blank">忘记密码？</a>
-				</p>
- 				<input type="hidden" name="action" value="signin">
-				<p class="fieldset">
-					<input class="full-width2" type="submit" value="登 录">
-				</p>
-        <div class="err-msg"></div>
-			</div>
-		</div>
+            <span aria-hidden="true" class="hide" itemprop="name">Windows 11 介绍</span>
+            <span aria-hidden="true" class="hide" itemprop="description">Windows 11 使用 bloom 填入数字，会出现全屏 bloom 页面</span>
+            <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAk" style="width:100%;border:none;"  autoplay playsinline muted >
+                <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/17b94536-acb0-423b-b089-1a81928f1506/e006ec64-de4d-423e-90f6-1f78d9132037.mp4" type="video/mp4" />
+            </video>
+                <script type="application/ld+json">
+                    {
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "Windows 11 介绍",
+                    "description": "Windows 11 使用 bloom 填入数字，会出现全屏 bloom 页面",
+                    "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAk",
+                    "uploadDate": "2021-09-09",
+                    "duration": "PT0M04S",
+                    "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/17b94536-acb0-423b-b089-1a81928f1506/e006ec64-de4d-423e-90f6-1f78d9132037.mp4",
+                    "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/17b94536-acb0-423b-b089-1a81928f1506/e006ec64-de4d-423e-90f6-1f78d9132037.mp4"
+                    }
+                </script>
+        </div>
+            <div class="image-container2">
+                <picture>
+                    <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIkV6" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIkV6" />
+                    <img class="lazyloaded " alt="Windows 11 屏幕中有固定的推荐图标和 bloom 背景" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIkV6" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIkV6" />
+                </picture>
+            </div>
+                    <div class="image-container1">
+                <picture>
+                    
+                    <img class="hide" alt="Windows 11 屏幕中有固定的推荐图标和 bloom 背景" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWKgyt" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWKgyt" />
+                </picture>
+            </div>
+        </div>
+</section>
+<div>
+    <div data-grid="col-12" class="m-banner static-in-lower-vp">
 
-		<div id="cd-signup"> <!-- 注册表单 -->
-			<div class="cd-form">
-				<p class="fieldset">
-					<label class="image-replace cd-password" for="verifycode">邀请码</label>
-					<input class="full-width has-padding has-border" id="signup-verifycode" name="verifycode" type="text"  placeholder="输入邀请码">
-				</p>
-				<p class="fieldset">
-					<label class="image-replace cd-username" for="signup-username">用户名</label>
-					<input class="full-width has-padding has-border" id="signup-username" name="name" type="text" placeholder="输入用户名">
-				</p>
+                            <h2 class="c-heading-2 f-lean">全新推出 Windows&nbsp;11</h2>
+                    <p class="c-paragraph-1">与你所爱，更近一步。</p>
+                    </div>
+</div>
+    <div data-grid="">
+        <div class="m-ambient-video f-lean mp4inline inline-popup no-play-pause static-in-lower-vp">
+            <span aria-hidden="true" class="hide" itemprop="name">Windows 11 介绍</span>
+            <span aria-hidden="true" class="hide" itemprop="description">Windows 11 使用 bloom 填入数字，会出现全屏 bloom 页面</span>
+            <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAk" style="width:100%;border:none;"  autoplay playsinline muted >
+                <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/17b94536-acb0-423b-b089-1a81928f1506/e006ec64-de4d-423e-90f6-1f78d9132037.mp4" type="video/mp4"/>
+            </video>
+            <button class="videobutton c-call-to-action c-glyph glyph-play" aria-label="了解 Windows 11 的全新功能概览"></button>
+        </div>
+            <script type="application/ld+json">
+                {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Windows 11 介绍",
+                "description": "Windows 11 使用 bloom 填入数字，会出现全屏 bloom 页面",
+                "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAk",
+                "uploadDate": "2021-09-09",
+                "duration": "PT0M04S",
+                "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/17b94536-acb0-423b-b089-1a81928f1506/e006ec64-de4d-423e-90f6-1f78d9132037.mp4",
+                "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/17b94536-acb0-423b-b089-1a81928f1506/e006ec64-de4d-423e-90f6-1f78d9132037.mp4"
+                }
+            </script>
+    </div>
 
-				<p class="fieldset">
-					<label class="image-replace cd-email" for="signup-email">邮箱</label>
-					<input class="full-width has-padding has-border" name="email" id="signup-email" type="email" placeholder="输入mail">
-				</p>
+<div class="padding-top-36 hero-item-video" data-grid="">
+            <section class="m-hero-item f-x-center f-y-center rounded-corners inline-popup mp4inline black-theme play-on-focus context-accessory " itemscope="">
+                                    <picture>
 
-				<p class="fieldset">
-					<label class="image-replace cd-password" for="signup-password">密码</label>
-					<input class="full-width has-padding has-border" id="signup-password" name="password" type="password"  placeholder="输入密码">
-				</p>
-				<p class="fieldset">
-					<label class="image-replace cd-password" for="signup-password2">重复输入密码</label>
-					<input class="full-width has-padding has-border" id="signup-password2" name="password2" type="password"  placeholder="重复输入密码">
-				</p>
-				
-				<!-- 
-				<p class="fieldset">
-					<input type="checkbox" id="accept-terms">
-					<label for="accept-terms">我已阅读并同意 <a href="javascript:;">用户协议</a></label>
-				</p>
-				 -->
-				 
-				 <input type="hidden" name="action" value="signup">
-				<p class="fieldset">
-					<input class="full-width2" type="submit" value="注册新用户">
-				</p>
-				<p class="fieldset">
-				  <a href="//www.runoob.com/w3cnote/runoob-user-test-intro.html#invite" target="_blank">如何获取邀请码？</a>
-				  </p>
-				<div class="err-msg"></div>
-			</div>
+                    <div class="mp4inline padding-top-36 hero-item-video" data-grid="">
+                        <span aria-hidden="true" class="hide" itemprop="name">全新的 Windows 11 外观和体验</span>
+                        <span aria-hidden="true" class="hide" itemprop="description">体验具备全新外观和体验的 Windows 11 的功能</span>
+                        <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIpP9" style="width:100%;border:none;" loop  muted >
+                            <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/90e7d2bc-6b38-4b51-a914-97d1ee9c6639/f295c528-01d7-46b2-a56c-44e7e571e0e8.mp4" type="video/mp4" />
+                        </video>
+                        <button class="videobutton c-call-to-action c-glyph glyph-play bottom-right" aria-label="了解更多有关 Windows 11 的功能"></button>
+                    </div>
+                                <script type="application/ld+json">
+                                    {
+                                    "@context": "http://schema.org",
+                                    "@type": "VideoObject",
+                                    "name": "全新的 Windows 11 外观和体验",
+                                    "description": "体验具备全新外观和体验的 Windows 11 的功能",
+                                    "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIpP9",
+                                    "uploadDate": "2021-09-09",
+                                    "duration": "PT0M18S",
+                                    "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/90e7d2bc-6b38-4b51-a914-97d1ee9c6639/f295c528-01d7-46b2-a56c-44e7e571e0e8.mp4",
+                                    "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/90e7d2bc-6b38-4b51-a914-97d1ee9c6639/f295c528-01d7-46b2-a56c-44e7e571e0e8.mp4"
+                                    }
+                                </script>
+                    </picture>
+                <div>
+                    <div>
+                                                    <h2 class="c-heading-2 f-lean">刷新您的认知</h2>
+                                                    <p class="c-paragraph-3">全新观感。轻松搜索并保持有序。Windows&nbsp;11 为你们而生，将始终陪伴你们。</p>
 
-		</div>
+                            <div class="c-group">
+                                    <a href="https://www.microsoft.com/zh-cn/windows/windows-11" target="_self" aria-label="了解更多有关 Windows 11 的功能" class="c-call-to-action c-glyph c-button f-primary blue-button">
+                                        <span>探索 WINDOWS 11</span>
+                                    </a>
+                            </div>
+                                            </div>
+                </div>
+            </section>
+</div>
+<div data-grid="container" id="homeMosaic" class="custom-mosaic my-new-class hide">
+        <div class="m-mosaic">
+            <div class="c-mosaic">
+                <div data-f-mosaic="f-vp1-whole f-height-large card-large">
+                    <section class="c-mosaic-placement white-theme no-play-pause play-on-focus">
+                                                    <picture>
+                                <div class="m-ambient-video f-lean mp4inline white-theme no-play-pause play-on-focus">
+                                    <span aria-hidden="true" class="hide" itemprop="name">使用 Windows 11 最大程度提高工作效率</span>
+                                    <span aria-hidden="true" class="hide" itemprop="description">视频展示了 Windows 11 中的贴靠助手与 Microsoft Word、Microsoft Teams 和 Microsoft Edge 的关系</span>
+                                    <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIME" style="width:100%;border:none;"   muted >
+                                        <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/f0796593-33b7-4159-9038-c290c0e6ec3b/ae9ee29b-389f-4467-9b86-a4b7cf33c710.mp4" type="video/mp4" />
+                                    </video>
+                                    <button class="videobutton c-call-to-action c-glyph glyph-play top-left" aria-label="播放视频"></button>
+                                </div>
+                                        <script type="application/ld+json">
+                                            {
+                                            "@context": "http://schema.org",
+                                            "@type": "VideoObject",
+                                            "name": "使用 Windows 11 最大程度提高工作效率",
+                                            "description": "视频展示了 Windows 11 中的贴靠助手与 Microsoft Word、Microsoft Teams 和 Microsoft Edge 的关系",
+                                            "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIME",
+                                            "uploadDate": "2021-09-09",
+                                            "duration": "PT0M05S",
+                                            "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/f0796593-33b7-4159-9038-c290c0e6ec3b/ae9ee29b-389f-4467-9b86-a4b7cf33c710.mp4",
+                                            "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/f0796593-33b7-4159-9038-c290c0e6ec3b/ae9ee29b-389f-4467-9b86-a4b7cf33c710.mp4"
+                                            }
+                                        </script>
+                            </picture>
+                        <div>
+                            <h3 class="c-heading-4">获得全新视角<sup>2</sup></h3>                                                        
+                        </div>
+                    </section>
+                </div>
+                <div data-f-mosaic="f-vp1-whole f-height-large card-small">
+                    <section class="c-mosaic-placement white-theme">
+                            <picture>
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" media="(min-width: 1779px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" media="(min-width: 1400px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" media="(min-width: 1084px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" media="(min-width:768px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" media="(min-width:540px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" media="(min-width:0)">
+                                <img srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoF3" alt="Windows 11 小组件屏幕">
+                            </picture>
+                                                <div>
+                            <h3 class="c-heading-4">工作从未如此高效<sup>4</sup></h3>                                                        
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+            <section class="m-image-intro black-theme f-align-left play-on-focus">
+                            <picture>
+                    <div class="f-lean mp4inline black-theme f-align-left play-on-focus">
+                        <span aria-hidden="true" class="hide" itemprop="name">Microsoft Teams 视频</span>
+                        <span aria-hidden="true" class="hide" itemprop="description">Microsoft Teams 使人们得以创建联系</span>
+                        <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIMH" style="width:100%;border:none;"   muted >
+                            <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/872df7c4-fec8-4218-b0eb-51fd7c347e26/4107f768-01b9-4d6b-9ef4-ac04e1b641e1.mp4" type="video/mp4" />
+                        </video>
+                        <button class="videobutton c-call-to-action c-glyph glyph-play bottom-right" aria-label="播放视频"></button>
+                    </div>
+                        <script type="application/ld+json">
+                            {
+                            "@context": "http://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Microsoft Teams 视频",
+                            "description": "Microsoft Teams 使人们得以创建联系",
+                            "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIMH",
+                            "uploadDate": "2021-09-09",
+                            "duration": "PT0M08S",
+                            "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/872df7c4-fec8-4218-b0eb-51fd7c347e26/4107f768-01b9-4d6b-9ef4-ac04e1b641e1.mp4",
+                            "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/872df7c4-fec8-4218-b0eb-51fd7c347e26/4107f768-01b9-4d6b-9ef4-ac04e1b641e1.mp4"
+                            }
+                        </script>
+                </picture>
+            <div>
+                <h3 class="c-heading-4">相聚让生活更美好</h3>                                
+            </div>
+        </section>
+            <div class="m-mosaic">
+            <div class="c-mosaic">
+                <div data-f-mosaic="f-vp1-whole f-height-large card-small">
+                    <section class="c-mosaic-placement black-theme no-play-pause play-on-focus">
+                                            <picture>
+                        <div class="m-ambient-video f-lean mp4inline black-theme no-play-pause play-on-focus">
+                            <span aria-hidden="true" class="hide" itemprop="name">Windows 11 游戏</span>
+                            <span aria-hidden="true" class="hide" itemprop="description">自带光环的人物，背景中呈现魅力四射的光线</span>
+                            <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIMK" style="width:100%;border:none;"   muted >
+                                <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/d1637b61-89da-48bc-82fe-9354df424019/a5341979-13b4-4807-83d3-7149f0ead5dd.mp4" type="video/mp4" />
+                            </video>
+                            <button class="videobutton c-call-to-action c-glyph glyph-play top-left" aria-label="播放视频"></button>
+                        </div>
+                            <script type="application/ld+json">
+                            {
+                            "@context": "http://schema.org",
+                            "@type": "VideoObject",
+                            "name": "Windows 11 游戏",
+                            "description": "自带光环的人物，背景中呈现魅力四射的光线",
+                            "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIMK",
+                            "uploadDate": "2021-09-09",
+                            "duration": "PT0M05S",
+                            "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/d1637b61-89da-48bc-82fe-9354df424019/a5341979-13b4-4807-83d3-7149f0ead5dd.mp4",
+                            "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/d1637b61-89da-48bc-82fe-9354df424019/a5341979-13b4-4807-83d3-7149f0ead5dd.mp4"
+                            }
+                            </script>
+                    </picture>
+                        <div>
+                            <h3 class="c-heading-4">游戏时间。随时恭候。<sup>2</sup> <sup>3</sup></h3>                                                        
+                        </div>
+                    </section>
+                </div>
+                <div data-f-mosaic="f-vp1-whole f-height-large card-large">
+                    <section class="c-mosaic-placement white-theme">
+                            <picture>
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" media="(min-width: 1779px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" media="(min-width: 1400px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" media="(min-width: 1084px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" media="(min-width:768px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" media="(min-width:540px)">
+                                <source srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" media="(min-width:0)">
+                                <img srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIJX0" alt="Microsoft Teams 弹出对话框的聊天窗口自带麦克风">
+                            </picture>
+                                                <div>
+                            <h3 class="c-heading-4">轻松表达</h3>                                                        
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+</div>
+<div>
+    <div data-grid="col-12" class="m-banner rounded-corners">
 
-		<a href="javascript:;" class="cd-close-form">关闭</a>
-	</div>
-</div> 
-<script src="https://static.runoob.com/assets/libs/hl/run_prettify.js"></script>
-<script src="/wp-content/themes/runoob/assets/js/main.min.js?v=1.130"></script>
+                            <h2 class="c-heading-3">准备好升级到 Windows&nbsp;11 了吗？</h2>
+                    <p class="c-paragraph-4">购买支持 Windows&nbsp;11 的电脑。<sup>1</sup></p>
+                    <div class="c-group">
+                        <a href="https://www.microsoft.com/zh-cn/windows/get-windows-11#retailers" target="_self" aria-label="购买设备" class="c-call-to-action c-glyph c-button f-primary blue-button">
+                            <span>购买设备</span>
+                        </a>
 
+            </div>
+            </div>
+</div>
+    <div data-grid="col-12" class="m-image image-video-comp margin-top-48 ">
+            <picture class="c-image">
+                <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAn" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAn">
+                <img class="lazyloaded " alt="6 台 Windows 11 电脑排列在一起" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAn" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoAn">
+            </picture>
+                            </div>
+
+<div data-grid="">
+            <section class="m-hero-item f-x-left f-y-center rounded-corners f-transparent no-play-pause play-on-focus upgraded-width context-accessory " itemscope="">
+                                    <picture>
+
+                    <div class="mp4inline" data-grid="">
+                        <span aria-hidden="true" class="hide" itemprop="name">如何获取 Windows 11</span>
+                        <span aria-hidden="true" class="hide" itemprop="description">全新 Windows 体验，拉近您与所爱的人和事物的距离</span>
+                        <video class="mp4videoinline" poster="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIMN" style="width:100%;border:none;"   muted >
+                            <source src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/d6a4d4d5-3440-44da-906a-854ed271da1f/ceb17a83-fb6b-418f-a18d-66a9f5f3a665.mp4" type="video/mp4" />
+                        </video>
+                        <button class="videobutton c-call-to-action c-glyph glyph-play top-left" aria-label="播放视频"></button>
+                    </div>
+                                <script type="application/ld+json">
+                                    {
+                                    "@context": "http://schema.org",
+                                    "@type": "VideoObject",
+                                    "name": "如何获取 Windows 11",
+                                    "description": "全新 Windows 体验，拉近您与所爱的人和事物的距离",
+                                    "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWJIMN",
+                                    "uploadDate": "2021-09-09",
+                                    "duration": "PT0M04S",
+                                    "contentUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/d6a4d4d5-3440-44da-906a-854ed271da1f/ceb17a83-fb6b-418f-a18d-66a9f5f3a665.mp4",
+                                    "embedUrl": "https://wus-streaming-video-rt-microsoft-com.akamaized.net/d6a4d4d5-3440-44da-906a-854ed271da1f/ceb17a83-fb6b-418f-a18d-66a9f5f3a665.mp4"
+                                    }
+                                </script>
+                    </picture>
+                <div>
+                    <div>
+                                                    <h2 class="c-heading-3 f-lean">免费升级</h2>
+                                                    <p class="c-paragraph-3">大多数 Windows 10 电脑均能运行 Windows&nbsp;11。重磅消息——可免费升级！<sup>1</sup></p>
+
+                            <div class="c-group">
+                                    <a href="https://www.microsoft.com/zh-cn/windows/get-windows-11" target="_self" aria-label="了解更多获取 Windows 11 的渠道" class="c-call-to-action c-glyph c-button f-primary blue-button">
+                                        <span>如何获取 Windows 11</span>
+                                    </a>
+                                    <a href="https://www.microsoft.com/zh-cn/windows/compare-windows-11-home-vs-pro-versions" target="_self" aria-label="比较各个可使用的 Windows 版本" class="c-call-to-action c-glyph c-button f-primary white-button">
+                                        <span>比较 Windows 的各个版本</span>
+                                    </a>
+                            </div>
+                                            </div>
+                </div>
+            </section>
+</div>
+
+
+    <div data-grid="container" class="image-priority-accolate featurebox"   >
+                <section data-grid="col-12" class="m-feature f-align-left rounded-corners padding-top-48 padding-bottom-48  ">
+                        <picture class="c-image">
+                            <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyo" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyo">
+                            <img class="lazyloaded " alt="带“开始”菜单的笔记本电脑" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyo" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyo">
+                        </picture>
+                <div class="featurecontent">
+
+                    <h2 class="c-heading-3">获取 Windows&nbsp;10 或 Windows&nbsp;7 的支持</h2>                    <p class="c-paragraph-3">如果您正在寻求帮助或需要关于另一个版本的 Windows 的信息，请查看下面的链接。</p>                                            <div class="c-group">
+                                    <a href="https://support.microsoft.com/windows" target="_blank" aria-label="了解有关 Windows 10 支持的更多信息" class="c-call-to-action c-glyph c-button f-primary blue-button">
+                                        <span>Windows 10 支持</span>
+                                    </a>
+                                    <a href="https://www.microsoft.com/zh-cn/windows/windows-7-end-of-life-support-information" target="_self" aria-label="了解有关 Windows 7 的详细信息" class="c-call-to-action c-glyph c-button f-primary white-button">
+                                        <span>WINDOWS 7 信息</span>
+                                    </a>
+
+                        </div>
+                                    </div>
+                </section>
+
+
+
+    </div>
+
+<div>
+    <div data-grid="col-12" class="m-banner rounded-corners">
+
+                            <h2 class="c-heading-3 padding-bottom-24">探索 Windows&nbsp;11 的无限可能</h2>
+                            <div class="c-group">
+                        <a href="https://www.microsoft.com/zh-cn/windows/windows-11" target="_self" aria-label="了解有关 Windows 11 的详细信息" class="c-call-to-action c-glyph c-button f-primary blue-button">
+                            <span>了解详细信息</span>
+                        </a>
+
+            </div>
+            </div>
+</div>
+    <div data-grid="col-12" class="m-image image-video-comp center ">
+            <picture class="c-image">
+                <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyA" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyA">
+                <img class="lazyloaded " alt="Windows 11 bloom" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyA" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIjyA">
+            </picture>
+                            </div>
+
+<div class="" data-grid="container">
+    <hr class="c-divider x-hidden-focus" />
+</div><div>
+    <div data-grid="container" class="m-link-navigation wdg-support-links">
+            <button id="prefooterDrawer" class="drawer c-glyph" aria-label="查看更多 Windows 链接" aria-expanded="false" aria-controls="prefooterNav">链接</button>
+        <nav class="c-link-navigation" aria-label="Windows 支持链接">
+            <ul>
+                        <li>
+                            <a target="_blank" aria-label="了解有关 Windows 预览体验计划的详细信息" href="https://insider.windows.com/" class="c-hyperlink f-image">
+                                <picture>
+                                    <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIm60" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIm60">
+                                    <img alt="" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIm60" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIm60">
+                                                                            <div role="link" class="padding-top-12">WINDOWS 预览体验计划</div>
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" aria-label="了解有关 Windows 支持的详细信息" href="https://support.microsoft.com/windows" class="c-hyperlink f-image">
+                                <picture>
+                                    <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoza" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoza">
+                                    <img alt="" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoza" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoza">
+                                                                            <div role="link" class="padding-top-12">WINDOWS 支持</div>
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" aria-label="前往 Windows 博客" href="https://blogs.windows.com/" class="c-hyperlink f-image">
+                                <picture>
+                                    <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIgSp" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIgSp">
+                                    <img alt="" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIgSp" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIgSp">
+                                                                            <div role="link" class="padding-top-12">WINDOWS 博客</div>
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" aria-label="咨询 Windows 11 社区" href="https://answers.microsoft.com/zh-cn/windows" class="c-hyperlink f-image">
+                                <picture>
+                                    <source data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoz6" media="(min-width:0px)" srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoz6">
+                                    <img alt="" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoz6" data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWIoz6">
+                                                                            <div role="link" class="padding-top-12">咨询社区</div>
+                                </picture>
+                            </a>
+                        </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="padding-bottom-36" data-grid="container">
+    <hr class="c-divider x-hidden-focus" />
+</div><section role="region" aria-label="脚注：免责声明" class="article-section-footnotes disclaimer pt-3 pb-3 theme-dark">
+    <div data-grid="container">
+        <div data-grid="col-12">
+            <ul>
+                    <li class="c-caption-2 x-hidden-focus">
+
+                        功能和应用的供应情况可能因地区而异。
+                    </li>
+                    <li class="c-caption-2 x-hidden-focus">
+
+                            <a aria-label="返回脚注 1 引用" href="javascript:void(0)" class="c-hyperlink supLink" id="1">
+                                <span class="supFn">1</span>
+                            </a>
+                        Windows 11 的升级将在 2021 年底至 2022 年在所有符合条件的设备上进行。具体时间将因设备而异。某些功能需要额外的硬件，请参见<a class='c-hyperlink' href='https://www.microsoft.com/zh-cn/windows/windows-11-specifications' target='_self' aria-label='了解有关 Windows 11 规格、功能和电脑要求的更多信息'> Windows 11 规格说明</a>。
+                    </li>
+                    <li class="c-caption-2 x-hidden-focus">
+
+                            <a aria-label="返回脚注 2 引用" href="javascript:void(0)" class="c-hyperlink supLink" id="2">
+                                <span class="supFn">2</span>
+                            </a>
+                        某些应用和游戏单独售卖。
+                    </li>
+                    <li class="c-caption-2 x-hidden-focus">
+
+                            <a aria-label="返回脚注 3 引用" href="javascript:void(0)" class="c-hyperlink supLink" id="3">
+                                <span class="supFn">3</span>
+                            </a>
+                        Xbox Game Pass 订阅单独售卖 (<a class='c-hyperlink' href='https://www.xbox.com/' target='_blank' aria-label='前往 Xbox 网站 '>https://www.xbox.com</a>)。可能需要额外的硬件和订阅。  游戏名、数量、功能和可用性随时间和设备、地区和平台而异 (<a class='c-hyperlink' href='https://www.xbox.com/regions' target='_blank' aria-label='获取 Xbox 地区列表'>https://www.xbox.com/regions</a>)。除非取消订阅 (<a class='c-hyperlink' href='https://account.microsoft.com/account/' target='_blank' aria-label='登录或创建一个新 Microsoft 帐户来管理订阅'>account.microsoft.com/services</a>)，否则连续会员将自动按当时的正常价格收费（可能发生变化；加之可能需要提供适量税费）。
+                    </li>
+                    <li class="c-caption-2 x-hidden-focus">
+
+                            <a aria-label="返回脚注 4 引用" href="javascript:void(0)" class="c-hyperlink supLink" id="4">
+                                <span class="supFn">4</span>
+                            </a>
+                        需要网络访问。可能会产生费用。
+                    </li>
+            </ul>
+        </div>
+    </div>
+</section>                        <div id="social-network">
+                            <div data-grid="container">
+                                
+
+
+
+    <div data-grid="col-12">
+        <div class="m-social f-horizontal f-share" itemscope="" itemtype="https://schema.org/Organization">
+            <span>关注我们</span>
+            <ul>
+                        <li class="social-linked-icon  Facebook">
+                            <a itemprop="sameAs"
+                               href="javascript:void(0);" aria-label="社交媒体链接" target="_blank" title="社交媒体链接">
+                                <picture>
+                                    <source srcset="https://c.s-microsoft.com/zh-cn/CMSImages/wechat-color.png?version=a0708e8c-0e68-a7c8-9ece-ad71f007821d">
+                                    <img src="https://c.s-microsoft.com/zh-cn/CMSImages/wechat-color.png?version=a0708e8c-0e68-a7c8-9ece-ad71f007821d" alt="wechat">
+
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="social-linked-icon  Twitter">
+                            <a itemprop="sameAs"
+                               href="https://weibo.com/p/1006061652987982" aria-label="社交媒体链接" target="_blank" title="社交媒体链接">
+                                <picture>
+                                    <source srcset="https://c.s-microsoft.com/zh-cn/CMSImages/weibo-color.png?version=9724af91-3d78-e2ca-0dda-291ae59eee58">
+                                    <img src="https://c.s-microsoft.com/zh-cn/CMSImages/weibo-color.png?version=9724af91-3d78-e2ca-0dda-291ae59eee58" alt="weibo">
+
+                                </picture>
+                            </a>
+                        </li>
+
+            </ul>
+
+            <button class="c-glyph" aria-label="Show additional social media links" aria-hidden="true" data-js-toggle="false"></button>
+        </div>
+    </div>
+
+                            </div>
+                        </div>
+    </div>
+
+
+        </main>
+    </div>
+    <div id="footerArea" class="uhf"  data-m='{"cN":"footerArea","cT":"Area_coreuiArea","id":"a2Body","sN":2,"aN":"Body"}'>
+                <div id="footerRegion"     data-region-key="footerregion" data-m='{"cN":"footerRegion","cT":"Region_coreui-region","id":"r1a2","sN":1,"aN":"a2"}' >
+
+    <div  id="footerUniversalFooter" data-m='{"cN":"footerUniversalFooter","cT":"Module_coreui-universalfooter","id":"m1r1a2","sN":1,"aN":"r1a2"}'  data-module-id="Category|footerRegion|coreui-region|footerUniversalFooter|coreui-universalfooter">
+        
+
+
+
+<footer id="uhf-footer" class="c-uhff context-uhf"  data-uhf-mscc-rq="false" data-footer-footprint="/Windows/windows-footer, fromService: True" data-m='{"cN":"Uhf footer_cont","cT":"Container","id":"c1m1r1a2","sN":1,"aN":"m1r1a2"}'>
+        <nav class="c-uhff-nav" aria-label="页脚资源链接" data-m='{"cN":"Footer nav_cont","cT":"Container","id":"c1c1m1r1a2","sN":1,"aN":"c1m1r1a2"}'>
+            
+                <div class="c-uhff-nav-row">
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn1_cont","cT":"Container","id":"c1c1c1m1r1a2","sN":1,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="4">新增内容</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Microsoft 365 新增内容" class="c-uhff-link" href="https://www.microsoft.com/microsoft-365" data-m='{"cN":"Whatsnew_Microsoft365_nav","id":"n1c1c1c1m1r1a2","sN":1,"aN":"c1c1c1m1r1a2"}'>Microsoft 365</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Laptop 2 新增内容" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/surface/devices/surface-laptop-2" data-m='{"cN":"Footer_WhatsNew_SurfaceLaptop2_nav","id":"n2c1c1c1m1r1a2","sN":2,"aN":"c1c1c1m1r1a2"}'>Surface Laptop 2</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Go 新增内容" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/surface/devices/surface-go" data-m='{"cN":"Footer_WhatsNew_SurfaceGo_nav","id":"n3c1c1c1m1r1a2","sN":3,"aN":"c1c1c1m1r1a2"}'>Surface Go</a>
+                            </li>
+                            <li>
+                                <a aria-label="Windows 11 应用程序 新增内容" class="c-uhff-link" href="https://www.microsoft.com/windows/windows-11-apps" data-m='{"cN":"Footer_WhatsNew_Windows_11_apps_nav","id":"n4c1c1c1m1r1a2","sN":4,"aN":"c1c1c1m1r1a2"}'>Windows 11 应用程序</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn2_cont","cT":"Container","id":"c2c1c1m1r1a2","sN":2,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="4">Microsoft Store</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="帐户个人资料 Microsoft Store" class="c-uhff-link" href="https://account.microsoft.com/" data-m='{"cN":"Footer_StoreandSupport_AccountProfile_nav","id":"n1c2c1c1m1r1a2","sN":1,"aN":"c2c1c1m1r1a2"}'>帐户个人资料</a>
+                            </li>
+                            <li>
+                                <a aria-label="下载中心 Microsoft Store" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/download" data-m='{"cN":"Footer_StoreandSupport_DownloadCenter_nav","id":"n2c2c1c1m1r1a2","sN":2,"aN":"c2c1c1m1r1a2"}'>下载中心</a>
+                            </li>
+                            <li>
+                                <a aria-label="订单跟踪 Microsoft Store" class="c-uhff-link" href="https://account.microsoft.com/orders" data-m='{"cN":"Footer_StoreandSupport_OrderTracking_nav","id":"n3c2c1c1m1r1a2","sN":3,"aN":"c2c1c1m1r1a2"}'>订单跟踪</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn3_cont","cT":"Container","id":"c3c1c1m1r1a2","sN":3,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="4">教育</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Microsoft 教育领域 教育" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/education" data-m='{"cN":"Footer_Education_MicrosoftInEducation_nav","id":"n1c3c1c1m1r1a2","sN":1,"aN":"c3c1c1m1r1a2"}'>Microsoft 教育领域</a>
+                            </li>
+                            <li>
+                                <a aria-label="适合学生的 Office 教育" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/education/products/office/default.aspx" data-m='{"cN":"Footer_Education_OfficeForStudents_nav","id":"n2c3c1c1m1r1a2","sN":2,"aN":"c3c1c1m1r1a2"}'>适合学生的 Office</a>
+                            </li>
+                            <li>
+                                <a aria-label="适用于学校的 Office 365 教育" class="c-uhff-link" href="https://products.office.com/zh-cn/academic/compare-office-365-education-plans" data-m='{"cN":"Footer_Education_Office365ForSchools_nav","id":"n3c3c1c1m1r1a2","sN":3,"aN":"c3c1c1m1r1a2"}'>适用于学校的 Office 365</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft Azure 教育领域 教育" class="c-uhff-link" href="https://azure.microsoft.com/zh-cn/community/education/" data-m='{"cN":"Footer_MicrosoftAzureInEducation_nav","id":"n4c3c1c1m1r1a2","sN":4,"aN":"c3c1c1m1r1a2"}'>Microsoft Azure 教育领域</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="c-uhff-nav-row">
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn4_cont","cT":"Container","id":"c4c1c1m1r1a2","sN":4,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="4">企业</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Azure 企业" class="c-uhff-link" href="https://azure.microsoft.com/" data-m='{"cN":"Footer_Enterprise_MicrosoftAzure_nav","id":"n1c4c1c1m1r1a2","sN":1,"aN":"c4c1c1m1r1a2"}'>Azure</a>
+                            </li>
+                            <li>
+                                <a aria-label="AppSource 企业" class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=808093" data-m='{"cN":"Footer_Enterprise_MicrosoftAppSource_nav","id":"n2c4c1c1m1r1a2","sN":2,"aN":"c4c1c1m1r1a2"}'>AppSource</a>
+                            </li>
+                            <li>
+                                <a aria-label="汽车 企业" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/industry/automotive" data-m='{"cN":"Footer_Enterprise_Automotive_nav","id":"n3c4c1c1m1r1a2","sN":3,"aN":"c4c1c1m1r1a2"}'>汽车</a>
+                            </li>
+                            <li>
+                                <a aria-label="政府机构 企业" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/industry/government" data-m='{"cN":"Footer_Enterprise_Government_nav","id":"n4c4c1c1m1r1a2","sN":4,"aN":"c4c1c1m1r1a2"}'>政府机构</a>
+                            </li>
+                            <li>
+                                <a aria-label="医疗保健 企业" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/industry/health/microsoft-cloud-for-healthcare" data-m='{"cN":"Footer_Enterprise_Health_nav","id":"n5c4c1c1m1r1a2","sN":5,"aN":"c4c1c1m1r1a2"}'>医疗保健</a>
+                            </li>
+                            <li>
+                                <a aria-label="制造业 企业" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"cN":"Footer_Enterprise_Manufacturing_nav","id":"n6c4c1c1m1r1a2","sN":6,"aN":"c4c1c1m1r1a2"}'>制造业</a>
+                            </li>
+                            <li>
+                                <a aria-label="金融服务 企业" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/industry/financial-services/microsoft-cloud-for-financial-services" data-m='{"cN":"Footer_Enterprise_FinanciaServices_nav","id":"n7c4c1c1m1r1a2","sN":7,"aN":"c4c1c1m1r1a2"}'>金融服务</a>
+                            </li>
+                            <li>
+                                <a aria-label="零售业 企业" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/industry/retail/microsoft-cloud-for-retail" data-m='{"cN":"Footer_Enterprise_Retail_nav","id":"n8c4c1c1m1r1a2","sN":8,"aN":"c4c1c1m1r1a2"}'>零售业</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn5_cont","cT":"Container","id":"c5c1c1m1r1a2","sN":5,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="4">开发人员</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Microsoft Visual Studio 开发人员" class="c-uhff-link" href="https://visualstudio.microsoft.com/" data-m='{"cN":"Footer_Developer_MicrosoftVisualStudio_nav","id":"n1c5c1c1m1r1a2","sN":1,"aN":"c5c1c1m1r1a2"}'>Microsoft Visual Studio</a>
+                            </li>
+                            <li>
+                                <a aria-label="Windows 开发人员中心 开发人员" class="c-uhff-link" href="https://developer.microsoft.com/zh-cn/windows" data-m='{"cN":"Footer_Developer_WindowsDevCenter_nav","id":"n2c5c1c1m1r1a2","sN":2,"aN":"c5c1c1m1r1a2"}'>Windows 开发人员中心</a>
+                            </li>
+                            <li>
+                                <a aria-label="开发人员中心 开发人员" class="c-uhff-link" href="https://developer.microsoft.com/" data-m='{"cN":"Footer_Developer_DeveloperCenter_nav","id":"n3c5c1c1m1r1a2","sN":3,"aN":"c5c1c1m1r1a2"}'>开发人员中心</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft 开发人员计划 开发人员" class="c-uhff-link" href="https://developer.microsoft.com/zh-cn/store/register" data-m='{"cN":"Footer_Developer_MicrosoftDeveloperProgram_nav","id":"n4c5c1c1m1r1a2","sN":4,"aN":"c5c1c1m1r1a2"}'>Microsoft 开发人员计划</a>
+                            </li>
+                            <li>
+                                <a aria-label="第9频道 开发人员" class="c-uhff-link" href="https://channel9.msdn.com/" data-m='{"cN":"Footer_Developer_Channel9_nav","id":"n5c5c1c1m1r1a2","sN":5,"aN":"c5c1c1m1r1a2"}'>第9频道</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft 365 开发人员中心 开发人员" class="c-uhff-link" href="https://developer.microsoft.com/microsoft-365" data-m='{"cN":"Footer_Developer_Microsoft365DevCenter_nav","id":"n6c5c1c1m1r1a2","sN":6,"aN":"c5c1c1m1r1a2"}'>Microsoft 365 开发人员中心</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft 365 开发人员计划 开发人员" class="c-uhff-link" href="https://developer.microsoft.com/microsoft-365/dev-program" data-m='{"cN":"Footer_Developer_Microsoft365DeveloperProgram_nav","id":"n7c5c1c1m1r1a2","sN":7,"aN":"c5c1c1m1r1a2"}'>Microsoft 365 开发人员计划</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn6_cont","cT":"Container","id":"c6c1c1m1r1a2","sN":6,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="4">公司</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="招贤纳士 公司" class="c-uhff-link" href="https://careers.microsoft.com/" data-m='{"cN":"Footer_Company_Careers_nav","id":"n1c6c1c1m1r1a2","sN":1,"aN":"c6c1c1m1r1a2"}'>招贤纳士</a>
+                            </li>
+                            <li>
+                                <a aria-label="关于 Microsoft 公司" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/about" data-m='{"cN":"Footer_Company_AboutMicrosoft_nav","id":"n2c6c1c1m1r1a2","sN":2,"aN":"c6c1c1m1r1a2"}'>关于 Microsoft</a>
+                            </li>
+                            <li>
+                                <a aria-label="公司新闻 公司" class="c-uhff-link" href="https://news.microsoft.com/zh-cn" data-m='{"cN":"Footer_Company_CompanyNews_nav","id":"n3c6c1c1m1r1a2","sN":3,"aN":"c6c1c1m1r1a2"}'>公司新闻</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft 隐私 公司" class="c-uhff-link" href="https://privacy.microsoft.com/zh-cn" data-m='{"cN":"Footer_Company_PrivacyAtMicrosoft_nav","id":"n4c6c1c1m1r1a2","sN":4,"aN":"c6c1c1m1r1a2"}'>Microsoft 隐私</a>
+                            </li>
+                            <li>
+                                <a aria-label="投资人 公司" class="c-uhff-link" href="https://www.microsoft.com/investor/default.aspx" data-m='{"cN":"Footer_Company_Investors_nav","id":"n5c6c1c1m1r1a2","sN":5,"aN":"c6c1c1m1r1a2"}'>投资人</a>
+                            </li>
+                            <li>
+                                <a aria-label="安全性 公司" class="c-uhff-link" href="https://www.microsoft.com/zh-cn/security/default.aspx" data-m='{"cN":"Footer_Company_Security_nav","id":"n6c6c1c1m1r1a2","sN":6,"aN":"c6c1c1m1r1a2"}'>安全性</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+        </nav>
+    <div class="c-uhff-base">
+                <a id="locale-picker-link" aria-label="内容语言选择器。当前设置为 中文(中国)" class="c-uhff-link c-uhff-lang-selector c-glyph glyph-world" href="/zh-cn/windows/worldwide" data-m='{"cN":"locale_picker(CN)_nav","id":"n7c1c1m1r1a2","sN":7,"aN":"c1c1m1r1a2"}'>中文(中国)</a>
+
+        <nav aria-label="Microsoft 企业链接">
+            <ul class="c-list f-bare" data-m='{"cN":"Corp links_cont","cT":"Container","id":"c8c1c1m1r1a2","sN":8,"aN":"c1c1m1r1a2"}'>
+                                <li  id="c-uhff-footer_contactus">
+                    <a class="c-uhff-link" href="https://support.microsoft.com/contactus/?ws=support" data-mscc-ic="false" data-m='{"cN":"Footer_ContactUs_nav","id":"n1c8c1c1m1r1a2","sN":1,"aN":"c8c1c1m1r1a2"}'>与我们联系</a>
+                </li>
+                <li  id="c-uhff-footer_privacyandcookies">
+                    <a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkId=248681" data-mscc-ic="false" data-m='{"cN":"Footer_PrivacyandCookies_nav","id":"n2c8c1c1m1r1a2","sN":2,"aN":"c8c1c1m1r1a2"}'>隐私</a>
+                </li>
+                <li class=" x-hidden" id="c-uhff-footer_managecookies">
+                    <a class="c-uhff-link" href="#" data-mscc-ic="false" data-m='{"cN":"Footer_ManageCookies_nav","id":"n3c8c1c1m1r1a2","sN":3,"aN":"c8c1c1m1r1a2"}'>管理 Cookie</a>
+                </li>
+                <li  id="c-uhff-footer_termsofuse">
+                    <a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=530144" data-mscc-ic="false" data-m='{"cN":"Footer_TermsOfUse_nav","id":"n4c8c1c1m1r1a2","sN":4,"aN":"c8c1c1m1r1a2"}'>使用条款</a>
+                </li>
+                <li  id="c-uhff-footer_trademarks">
+                    <a class="c-uhff-link" href="https://www.microsoft.com/trademarks" data-mscc-ic="false" data-m='{"cN":"Footer_Trademarks_nav","id":"n5c8c1c1m1r1a2","sN":5,"aN":"c8c1c1m1r1a2"}'>商标</a>
+                </li>
+                <li  id="c-uhff-footer_aboutourads">
+                    <a class="c-uhff-link" href="https://choice.microsoft.com/zh-cn" data-mscc-ic="false" data-m='{"cN":"Footer_AboutourAds_nav","id":"n6c8c1c1m1r1a2","sN":6,"aN":"c8c1c1m1r1a2"}'>关于我们的广告</a>
+                </li>
+
+                <li>&#169; Microsoft 2021</li>
+                
+            </ul>
+        </nav>
+    </div>
+    
+</footer>
+
+
+
+
+    </div>
+        </div>
+
+    </div>
+<script src="https://www.microsoft.com/onerfstatics/marketingsites-eas-prod/shell/_scrf/js/themes=default/8e-e88b64/93-04b71e/dd-2cee44/49-a00ab0/92-02e55d/7c-dcea75/75-fca72d/ed-e77ee7/d5-bf34c0/a9-078595/7a-7ea8cc/2d-40bdad/31-53ba50/96-eb5423/e6-6b0cce/d1-98d78a/8f-0b8d4b/a7-f7a340/48-6ed936/2e-ca165a/fc-169dd8/8e-60935c/87-fecbed/96-6ed6eb/c3-eb62e0/ad-ffd6bf/35-621acc/b0-07f293/1e-9d9d16/52-f0367f/1f-b57352/8d-b89eaf/e1-ed258e/20-0b10e2/6b-0f1117/fb-5e9831/44-5488b2?ver=2.0&_cf=20210618&iife=1"></script><script src="https://mem.gfx.ms/meversion?partner=Windows&market=zh-cn&uhf=1" defer></script>    <script>
+
+        WcpConsent.init("zh-cn", "cookie-banner", function (err, _siteConsent) {
+            if (err != undefined) {
+                return error;
+            } else {
+                siteConsent = _siteConsent;
+            }
+        }, onConsentChanged);
+
+        function onConsentChanged() {
+            var msccvalue = window.getCookie("MSCC");
+            window.mldcc = "MSCC:" + GetCategoryFromMSCC(msccvalue.toLowerCase());
+        }
+
+        $(window).on('load', function (e) {
+            ShowHideManageCookies('Manage cookies');
+        });
+
+    </script>
+    <script src="//mwf-service.akamaized.net/mwf/js/bundle/1.56.0/mwf-auto-init-main.var.min.js"></script>
+    <script type='text/javascript' src='/en-us/windows/remote-resource-center/articles/scripts/Globalscripts.js?v=_aDE2EGm0JJ9oxwHXGwMs3MQbfztewln9NXVgPUmIKM1' charset='utf-7'></script>
+
+    
+    <input type="hidden" name="firstName" id="FirstName" />
+    <input type="hidden" name="LastName" id="LastName" />
+    <input type="hidden" name="Email" id="Email" />
+
+    <div class="g4e c-dialog f-lightbox wdg-lightbox" id="default-lightbox" aria-hidden="true" role="dialog" aria-label="" tabindex="0">
+        <div role="presentation" tabindex="-1"></div>
+        <button class="c-glyph glyph-cancel" data-js-dialog-hide="" aria-label="Close video window" tabindex="0"></button>
+        <div role="dialog" aria-label="Lightbox" tabindex="-1">
+            <div role="document">
+                <div class="c-video-player">
+                    <div class="f-external-player" tabindex="-1">
+                        <span aria-hidden="true" class="hide" itemprop="name"></span>
+                        <span aria-hidden="true" class="hide" itemprop="description"></span>
+                        <div id="player-container2" video-Id="" class="InlinePlayerAPI"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="c-glyph glyph-cancel" data-js-dialog-hide="" aria-label="Close video window" tabindex="0"></button>
+    </div>
+    <a href="#primaryArea" class="m-back-to-top x-hidden-focus" aria-disabled="true" title="返回顶部" aria-label="单击以导航回页面顶端">
+        <div class="c-glyph glyph-up"></div>
+    </a>
 </body>
 </html>
