@@ -59,6 +59,8 @@
 
 <p>商业版64位：</p>
 <a href="ed2k://|file|zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso|5413181440|88CA1AE28F5F8A238647561B5C00E511|/">zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso</a>
+
+<a href="ed2k://|file|zh-cn_windows_11_business_editions_version_21h2_updated_october_2021_x64_dvd_a84e149f.iso|5419143168|B0C4BE7271CD65B2173326239D4F8BA2|/">zh-cn_windows_11_business_editions_version_21h2_updated_october_2021_x64_dvd_a84e149f.iso</a>
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/AnnaLili/AnnaLili.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
